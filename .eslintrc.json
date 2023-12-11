@@ -1,0 +1,156 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "eslint-comments"
+  ],
+  "rules": {
+    "@typescript-eslint/array-type": [
+      "error",
+      {
+        "default": "array",
+        "readonly": "array"
+      }
+    ],
+    "@typescript-eslint/await-thenable": "error",
+    "@typescript-eslint/ban-types": "error",
+    "@typescript-eslint/consistent-indexed-object-style": ["error", "record"],
+    "@typescript-eslint/consistent-type-assertions": [
+      "error",
+      {
+        "assertionStyle": "angle-bracket",
+        "objectLiteralTypeAssertions": "allow"
+      }
+    ],
+    "@typescript-eslint/explicit-function-return-type": [
+      "error",
+      {
+        "allowExpressions": true,
+        "allowTypedFunctionExpressions": true
+      }
+    ],
+    "@typescript-eslint/explicit-member-accessibility": [
+      "error",
+      {
+        "accessibility": "explicit",
+        "overrides":
+        {
+          "methods": "explicit",
+          "constructors": "explicit"
+        }
+      }
+    ],
+    "@typescript-eslint/member-ordering": [
+      "error",
+      {
+        "default": [
+          "public-static-field",
+          "protected-static-field",
+          "private-static-field",
+          "public-instance-field",
+          "protected-instance-field",
+          "private-instance-field",
+          "public-constructor",
+          "protected-constructor",
+          "private-constructor",
+          "public-static-method",
+          "protected-static-method",
+          "private-static-method",
+          "public-instance-method",
+          "protected-instance-method",
+          "private-instance-method"
+        ]
+      }
+    ],
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "default",
+        "format": ["camelCase"],
+        "leadingUnderscore": "allow"
+      },
+      {
+        "selector": "variable",
+        "format": ["camelCase"],
+        "leadingUnderscore": "allow"
+      },
+      {
+        "selector": "function",
+        "format": ["camelCase"],
+        "leadingUnderscore": "allow"
+      },
+      {
+        "selector": "parameter",
+        "format": ["camelCase"],
+        "leadingUnderscore": "allow"
+      },
+      {
+        "selector": "memberLike",
+        "format": ["camelCase"],
+        "leadingUnderscore": "allow"
+      },
+      {
+        "selector": "typeLike",
+        "format": ["PascalCase"]
+      },
+      {
+        "selector": "interface",
+        "format": ["PascalCase"]
+      },
+      {
+        "selector": "enumMember",
+        "format": ["UPPER_CASE"]
+      }
+    ],
+    "@typescript-eslint/no-dupe-class-members": "error",
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/no-extra-semi": "error",
+    "@typescript-eslint/no-confusing-void-expression": "error",
+    "@typescript-eslint/no-duplicate-enum-values": "error",
+    "@typescript-eslint/no-duplicate-type-constituents": "error",
+    "@typescript-eslint/no-extra-non-null-assertion": "error",
+    "@typescript-eslint/no-floating-promises": "error",
+    "@typescript-eslint/no-inferrable-types": ["error", { "ignoreProperties": true, "ignoreParameters": true }],
+    "@typescript-eslint/no-invalid-this": "error",
+    "@typescript-eslint/no-loss-of-precision": "error",
+    "@typescript-eslint/no-misused-promises": "error",
+    "@typescript-eslint/no-mixed-enums": "error",
+    "@typescript-eslint/no-non-null-asserted-optional-chain": "error",
+    "@typescript-eslint/no-non-null-assertion": "error",
+    "@typescript-eslint/no-redundant-type-constituents": "error",
+    "@typescript-eslint/no-require-imports": "error",
+    "@typescript-eslint/no-shadow": "error",
+    "@typescript-eslint/no-this-alias": "error",
+    "@typescript-eslint/no-throw-literal": "error",
+    "@typescript-eslint/no-unnecessary-type-constraint": "error",
+    "@typescript-eslint/no-unsafe-enum-comparison": "error",
+    "@typescript-eslint/no-useless-empty-export": "error",
+    "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "@typescript-eslint/prefer-enum-initializers": "error",
+    "@typescript-eslint/semi": "error",
+    "@typescript-eslint/restrict-plus-operands": "error",
+    "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+    "comma-dangle": ["error", "always-multiline"],
+    "curly": ["error", "multi-line", "consistent"],
+    "eqeqeq": "error",
+    "indent": ["error", 4, { "SwitchCase": 1 }],
+    "no-dupe-class-members": "off",
+    "no-extra-semi": "off",
+    "no-invalid-this": "off",
+    "no-loss-of-precision": "off",
+    "no-multiple-empty-lines": ["error", {"max": 1, "maxBOF": 0, "maxEOF": 0}],
+    "no-shadow": "off",
+    "no-unused-vars": "off",
+    "quotes": ["error", "single"],
+    "space-before-blocks": ["error", "always"]
+  },
+  "ignorePatterns": [
+    "out",
+    "dist",
+    "**/*.d.ts"
+  ]
+}
