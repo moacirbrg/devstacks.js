@@ -1,0 +1,1 @@
+export type SubscriptionMessage<T> = (value: T) => void;
