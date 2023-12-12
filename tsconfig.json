@@ -8,6 +8,13 @@
     "strict": true,
     "jsx": "react",
     "jsxFactory": "DOM.create",
-    "sourceMap": true
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": ["./src/*"],
+      "@components/*": ["src/components/*"],
+      "@libs/*": ["src/libs/*"],
+      "@assets/*": ["assets/*"],
+    }
   }
 }

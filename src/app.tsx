@@ -1,12 +1,12 @@
-import { Component } from './libs/core/component';
-import { FrameworkElement } from './libs/core/framework-element';
-import { DOM } from './libs/core/dom';
-import { Router } from './libs/routing/router';
-import { RouteNotFoundError } from './libs/error/route-not-found-error';
-import { NotFoundController } from './components/controllers/not-found/not-found.controller';
-import { ElementRef } from './libs/core/element-ref';
-import { TypoMessageShared } from './libs/ui/typo/message/typo-message.shared';
-import { TypoMessageColor } from './libs/ui/typo/message/typo-message.enum';
+import { Component } from '@libs/core/component';
+import { FrameworkElement } from '@libs/core/framework-element';
+import { DOM } from '@libs/core/dom';
+import { Router } from '@libs/routing/router';
+import { RouteNotFoundError } from '@libs/error/route-not-found-error';
+import { NotFoundController } from '@components/controllers/not-found/not-found.controller';
+import { ElementRef } from '@libs/core/element-ref';
+import { TypoMessageShared } from '@libs/ui/typo/message/typo-message.shared';
+import { TypoMessageColor } from '@libs/ui/typo/message/typo-message.enum';
 
 export class App extends Component {
     private static instance: App|null = null;

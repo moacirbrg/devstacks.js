@@ -1,8 +1,8 @@
 import { TypoMessageColor } from "./typo-message.enum";
-import { FrameworkElement } from "../../../core/framework-element";
-import { Component } from "../../../core/component";
-import { ComponentProps } from "../../../core/component-props";
-import { DOM } from '../../../core/dom';
+import { FrameworkElement } from "@libs/core/framework-element";
+import { Component } from "@libs/core/component";
+import { ComponentProps } from "@libs/core/component-props";
+import { DOM } from '@libs/core/dom';
 
 export interface UiTypoMessageProps extends ComponentProps {
     Color: TypoMessageColor;

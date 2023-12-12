@@ -1,4 +1,4 @@
-import { Component } from "../core/component";
+import { Component } from "@libs/core/component";
 import { CanActive } from "./can-active";
 
 export interface Route {

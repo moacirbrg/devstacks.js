@@ -1,12 +1,12 @@
-import { Component } from '../core/component';
+import { Component } from '@libs/core/component';
 import { Route } from './route';
 import { DynamicRoute } from './dynamic-route';
 import { StaticRoutes } from './static-route';
 import { RouterUtils } from './router-utils';
-import { FrameworkElement } from '../core/framework-element';
-import { DOM } from '../core/dom';
-import { RouteNotFoundError } from '../error/route-not-found-error';
-import { App } from '../../app';
+import { FrameworkElement } from '@libs/core/framework-element';
+import { DOM } from '@libs/core/dom';
+import { RouteNotFoundError } from '@libs/error/route-not-found-error';
+import { App } from '@src/app';
 
 export class Router {
     private static _currentComponent: Component|null = null;

@@ -2,7 +2,7 @@ import { Class } from "../data-type/class";
 import { Component } from "./component";
 import { ElementRef } from "./element-ref";
 import { FrameworkElement } from "./framework-element";
-import { Router } from '../routing/router';
+import { Router } from '@libs/routing/router';
 import {ComponentProps} from "./component-props";
 
 type JSXContent = string[] | HTMLElement[];
