@@ -1,19 +1,19 @@
 import { TypoHeadingSize } from '@libs/ui/typo/heading/typo-heading-size.enum';
-import { TypoHeadingWeight } from '@libs/ui/typo/heading/typo-heading-weight.enum';
+import { TypoWeight } from '@libs/ui/typo/typo-weight.enum';
 import { TypoFontFamily } from '@libs/ui/typo/typo-font-family.enum';
 
 export class TypoHeadingGlobals {
     public static FontFamily: TypoFontFamily = TypoFontFamily.SansSerif;
 
-    public static Weight: TypoHeadingWeight = TypoHeadingWeight.Bold;
-    public static H1Weight: TypoHeadingWeight|null = null;
-    public static H2Weight: TypoHeadingWeight|null = null;
-    public static H3Weight: TypoHeadingWeight|null = null;
-    public static H4Weight: TypoHeadingWeight|null = null;
-    public static H5Weight: TypoHeadingWeight|null = null;
-    public static H6Weight: TypoHeadingWeight|null = null;
+    public static Weight: TypoWeight = TypoWeight.Bold;
+    public static H1Weight: TypoWeight|null = null;
+    public static H2Weight: TypoWeight|null = null;
+    public static H3Weight: TypoWeight|null = null;
+    public static H4Weight: TypoWeight|null = null;
+    public static H5Weight: TypoWeight|null = null;
+    public static H6Weight: TypoWeight|null = null;
 
-    public static getWeight(size: TypoHeadingSize): TypoHeadingWeight {
+    public static getWeight(size: TypoHeadingSize): TypoWeight {
         if (size === TypoHeadingSize.H1 && this.H1Weight !== null) return TypoHeadingGlobals.H1Weight!;
         if (size === TypoHeadingSize.H2 && this.H2Weight !== null) return TypoHeadingGlobals.H2Weight!;
         if (size === TypoHeadingSize.H3 && this.H3Weight !== null) return TypoHeadingGlobals.H3Weight!;

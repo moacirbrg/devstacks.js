@@ -5,7 +5,7 @@ import { Router } from '@libs/routing/router';
 import { RouteNotFoundError } from '@libs/error/route-not-found-error';
 import { NotFoundController } from '@components/controllers/not-found/not-found.controller';
 import { ElementRef } from '@libs/core/element-ref';
-import { TypoMessageShared } from '@libs/ui/typo/message/typo-message.shared';
+import { TypoMessage } from '@libs/ui/typo/message/typo-message.component';
 import { TypoMessageColor } from '@libs/ui/typo/message/typo-message-color.enum';
 
 export class App extends Component {
@@ -56,9 +56,9 @@ export class App extends Component {
         }
 
         return (
-            <TypoMessageShared Color={TypoMessageColor.Danger}>
+            <TypoMessage Color={TypoMessageColor.Danger}>
                 An error happened, this page blocked itself for your security, please contact us.
-            </TypoMessageShared>
+            </TypoMessage>
         );
     }
 }
