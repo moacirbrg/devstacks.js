@@ -9,7 +9,7 @@ export class HomeController extends Component {
         return (
             <div>
                 <div>Home</div>
-                <TypoMessageShared Color={TypoMessageColor.Danger}>My tiny message!</TypoMessageShared>
+                <TypoMessageShared Color={TypoMessageColor.Info}>My tiny message!</TypoMessageShared>
             </div>
         );
     }

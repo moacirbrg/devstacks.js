@@ -11,26 +11,26 @@
     padding: var(--layout-nontable-padding-sm) var(--layout-nontable-padding-md);
 
     &.danger {
-        background-color: var(--color-danger);
+        background-color: var(--color-danger-20);
         border-color: var(--color-danger-30);
-        color: var(--color-danger-contrast);
+        color: var(--color-danger-contrast-20);
     }
 
     &.info {
-        background-color: var(--color-info);
+        background-color: var(--color-info-20);
         border-color: var(--color-info-30);
-        color: var(--color-info-contrast);
+        color: var(--color-info-contrast-20);
     }
 
     &.success {
-        background-color: var(--color-success);
+        background-color: var(--color-success-20);
         border-color: var(--color-success-30);
-        color: var(--color-success-contrast);
+        color: var(--color-success-contrast-20);
     }
 
     &.warning {
-        background-color: var(--color-warning-30);
-        border-color: var(--color-warning);
-        color: var(--color-warning-30-contrast);
+        background-color: var(--color-warning-20);
+        border-color: var(--color-warning-30);
+        color: var(--color-warning-contrast-20);
     }
 }
