@@ -4,7 +4,7 @@
   "description": "DevStacks SPA Framework",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode=development --watch",
+    "build": "webpack --mode=development",
     "build-prod": "webpack --mode=production"
   },
   "repository": {
