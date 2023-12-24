@@ -6,7 +6,7 @@ import { RouteNotFoundError } from '@libs/error/route-not-found-error';
 import { NotFoundController } from '@components/controllers/not-found/not-found.controller';
 import { ElementRef } from '@libs/core/element-ref';
 import { TypoMessageShared } from '@libs/ui/typo/message/typo-message.shared';
-import { TypoMessageColor } from '@libs/ui/typo/message/typo-message.enum';
+import { TypoMessageColor } from '@libs/ui/typo/message/typo-message-color.enum';
 
 export class App extends Component {
     private static instance: App|null = null;

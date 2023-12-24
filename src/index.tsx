@@ -1,4 +1,4 @@
-import "./styles.scss";
+import './styles.scss';
 import { DOM } from '@libs/core/dom';
 import { App } from './app';
 import { Routes } from './routes';

@@ -171,6 +171,10 @@ export class DOM {
         el.setAttribute(attributeName, (attributeValue as unknown as string) || '');
     }
 
+    public static setStyle(el: HTMLElement, styleName: string, styleValue: string): void {
+        el.style[styleName as any] = styleValue;
+    }
+
     public static show(el: HTMLElement): void {
         el.removeAttribute('data-hidden');
     }
