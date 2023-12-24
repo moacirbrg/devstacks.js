@@ -1,3 +1,4 @@
+import "./typo-message.shared.scss";
 import { TypoMessageColor } from "./typo-message.enum";
 import { FrameworkElement } from "@libs/core/framework-element";
 import { Component } from "@libs/core/component";
