@@ -3,5 +3,7 @@
 @import "styles/typography";
 
 body {
+    background-color: var(--color-body-10);
+    color: var(--color-body-contrast-10);
     font-family: var(--font-family);
 }
