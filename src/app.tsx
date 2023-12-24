@@ -6,7 +6,7 @@ import { RouteNotFoundError } from '@libs/error/route-not-found-error';
 import { NotFoundController } from '@components/controllers/not-found/not-found.controller';
 import { ElementRef } from '@libs/core/element-ref';
 import { TypoMessage } from '@libs/ui/typo/message/typo-message.component';
-import { TypoMessageColor } from '@libs/ui/typo/message/typo-message-color.enum';
+import { Color } from '@libs/ui/enums/color.enum';
 
 export class App extends Component {
     private static instance: App|null = null;
@@ -56,7 +56,7 @@ export class App extends Component {
         }
 
         return (
-            <TypoMessage Color={TypoMessageColor.Danger}>
+            <TypoMessage Color={Color.Danger}>
                 An error happened, this page blocked itself for your security, please contact us.
             </TypoMessage>
         );

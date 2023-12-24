@@ -1,12 +1,12 @@
 import "./typo-message.component.scss";
-import { TypoMessageColor } from "./typo-message-color.enum";
+import { Color } from "@libs/ui/enums/color.enum";
 import { FrameworkElement } from "@libs/core/framework-element";
 import { Component } from "@libs/core/component";
 import { ComponentProps } from "@libs/core/component-props";
 import { DOM } from '@libs/core/dom';
 
 export interface TypoMessageProps extends ComponentProps {
-    Color: TypoMessageColor;
+    Color: Color;
 }
 
 export class TypoMessage extends Component<TypoMessageProps> {
@@ -18,7 +18,7 @@ export class TypoMessage extends Component<TypoMessageProps> {
         );
     }
 
-    public setColor(color: TypoMessageColor): void {
+    public setColor(color: Color): void {
         this.props.Color = color;
         DOM.setAttribute(this.element!, 'class', `typo-message-component ${this.props.Color}`);
     }
