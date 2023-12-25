@@ -10,7 +10,10 @@ export class HomeController extends Component {
             <div class="home-controller">
                 <TypoHeading Size={TypoHeadingSize.H1}>Home</TypoHeading>
                 <p>Take a look at the samples:</p>
-                <a routerLink="/samples/typo-heading">Typo Heading</a>
+                <ul>
+                    <li><a routerLink="/samples/typo-heading">Typo Heading</a></li>
+                    <li><a routerLink="/samples/typo-message">Typo Message</a></li>
+                </ul>
             </div>
         );
     }
