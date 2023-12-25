@@ -7,6 +7,7 @@ import { DOM } from '@libs/core/dom';
 import { FontFamily } from '@libs/ui/enums/font-family.enum';
 import { FontWeight } from '@libs/ui/enums/font-weight.enum';
 import { TypoMessageGlobals } from '@libs/ui/typo/message/typo-message.globals';
+import { Styles } from '@libs/ui/styles';
 
 export interface TypoMessageProps extends ComponentProps {
     Color: Color;
@@ -17,43 +18,30 @@ export interface TypoMessageProps extends ComponentProps {
 export class TypoMessage extends Component<TypoMessageProps> {
     public render(): FrameworkElement {
         const element = (
-            <div class={`typo-message-component ${this.props.Color}`}>
+            <div class={`typo-message-component`} data-color={this.props.Color}>
                 {this.children}
             </div>
         );
 
-        this._setColor(this.props.Color, element);
-        this._setFontFamily(this.props.FontFamily || TypoMessageGlobals.FontFamily, element);
-        this._setFontWeight(this.props.FontWeight || TypoMessageGlobals.Weight, element);
+        Styles.setFontFamily(element, this.props.FontFamily || TypoMessageGlobals.FontFamily);
+        Styles.setFontWeight(element, this.props.FontWeight || TypoMessageGlobals.Weight);
 
         return element;
     }
 
-    public _setColor(color: Color, element: FrameworkElement): void {
-        this.props.Color = color;
-        DOM.setAttribute(element, 'class', `typo-message-component ${this.props.Color}`);
-    }
-
     public setColor(color: Color): void {
-        this._setColor(color, this.element!);
-    }
-
-    private _setFontFamily(fontFamily: FontFamily, element: FrameworkElement): void {
-        this.props.FontFamily = fontFamily;
-        DOM.setStyle(element, 'font-family', `var(${fontFamily})`);
+        this.props.Color = color;
+        DOM.setAttribute(this.element!, 'data-color', color);
     }
 
     public setFontFamily(fontFamily: FontFamily): void {
-        this._setFontFamily(fontFamily, this.element!);
-    }
-
-    private _setFontWeight(fontWeight: FontWeight, element: FrameworkElement): void {
-        this.props.FontWeight = fontWeight;
-        DOM.setStyle(element, 'font-weight', `var(${fontWeight})`);
+        this.props.FontFamily = fontFamily;
+        Styles.setFontFamily(this.element!, fontFamily);
     }
 
     public setFontWeight(fontWeight: FontWeight): void {
-        this._setFontWeight(fontWeight, this.element!);
+        this.props.FontWeight = fontWeight;
+        Styles.setFontWeight(this.element!, fontWeight);
     }
 
     public setContent(content: string|FrameworkElement): void {

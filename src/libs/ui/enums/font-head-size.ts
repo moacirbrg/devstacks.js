@@ -1,4 +1,4 @@
-export enum TypoHeadingSize {
+export enum FontHeadSize {
     H1 = '--font-size-h1',
     H2 = '--font-size-h2',
     H3 = '--font-size-h3',
