@@ -5,6 +5,7 @@ import { TypoHeading } from '@libs/ui/typo/heading/typo-heading.component';
 import { FontWeight } from '@libs/ui/enums/font-weight.enum';
 import { FontFamily } from '@libs/ui/enums/font-family.enum';
 import { FontHeadSize } from '@libs/ui/enums/font-head-size';
+import { Color } from '@libs/ui/enums/color.enum';
 
 export class SampleTypoHeadingController extends Component {
     public render(): FrameworkElement {
@@ -88,6 +89,16 @@ export class SampleTypoHeadingController extends Component {
                 <TypoHeading FontSize={FontHeadSize.H4} FontFamily={FontFamily.Monospace}> My Title H4 Monospace Bold</TypoHeading>
                 <TypoHeading FontSize={FontHeadSize.H5} FontFamily={FontFamily.Monospace}> My Title H5 Monospace Bold</TypoHeading>
                 <TypoHeading FontSize={FontHeadSize.H6} FontFamily={FontFamily.Monospace}> My Title H6 Monospace Bold</TypoHeading>
+
+                <hr/>
+                <TypoHeading FontSize={FontHeadSize.H3} FontWeight={FontWeight.Regular} Color={Color.Unknown}> My Title Unknown</TypoHeading>
+                <TypoHeading FontSize={FontHeadSize.H3} FontWeight={FontWeight.Regular} Color={Color.Neutral}> My Title Neutral</TypoHeading>
+                <TypoHeading FontSize={FontHeadSize.H3} FontWeight={FontWeight.Regular} Color={Color.Primary}> My Title Primary</TypoHeading>
+                <TypoHeading FontSize={FontHeadSize.H3} FontWeight={FontWeight.Regular} Color={Color.Secondary}> My Title Secondary</TypoHeading>
+                <TypoHeading FontSize={FontHeadSize.H3} FontWeight={FontWeight.Regular} Color={Color.Danger}> My Title Danger</TypoHeading>
+                <TypoHeading FontSize={FontHeadSize.H3} FontWeight={FontWeight.Regular} Color={Color.Info}> My Title Info</TypoHeading>
+                <TypoHeading FontSize={FontHeadSize.H3} FontWeight={FontWeight.Regular} Color={Color.Success}> My Title Success</TypoHeading>
+                <TypoHeading FontSize={FontHeadSize.H3} FontWeight={FontWeight.Regular} Color={Color.Warning}> My Title Warning</TypoHeading>
             </div>
         );
     }

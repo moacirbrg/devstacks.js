@@ -19,6 +19,26 @@ body { // default: light
     --color-body-contrast-80: color-mix(in srgb, var(--color-body-10) 5%, black 95%);
     --color-body-contrast-90: color-mix(in srgb, var(--color-body-10) 0%, black 100%);
 
+    --color-neutral-10: color-mix(in srgb, var(--color-neutral-50) 100%, white 20%);
+    --color-neutral-20: color-mix(in srgb, var(--color-neutral-50) 100%, white 15%);
+    --color-neutral-30: color-mix(in srgb, var(--color-neutral-50) 100%, white 10%);
+    --color-neutral-40: color-mix(in srgb, var(--color-neutral-50) 100%, white 5%);
+    --color-neutral-50: #eeeeee;
+    --color-neutral-60: color-mix(in srgb, var(--color-neutral-50) 100%, black 5%);
+    --color-neutral-70: color-mix(in srgb, var(--color-neutral-50) 100%, black 10%);
+    --color-neutral-80: color-mix(in srgb, var(--color-neutral-50) 100%, black 15%);
+    --color-neutral-90: color-mix(in srgb, var(--color-neutral-50) 100%, black 20%);
+
+    --color-neutral-contrast-10: color-mix(in srgb, var(--color-neutral-50) 50%, black 50%);
+    --color-neutral-contrast-20: color-mix(in srgb, var(--color-neutral-50) 45%, black 55%);
+    --color-neutral-contrast-30: color-mix(in srgb, var(--color-neutral-50) 40%, black 60%);
+    --color-neutral-contrast-40: color-mix(in srgb, var(--color-neutral-50) 35%, black 65%);
+    --color-neutral-contrast-50: color-mix(in srgb, var(--color-neutral-50) 30%, black 70%);
+    --color-neutral-contrast-60: color-mix(in srgb, var(--color-neutral-50) 25%, black 75%);
+    --color-neutral-contrast-70: color-mix(in srgb, var(--color-neutral-50) 20%, black 80%);
+    --color-neutral-contrast-80: color-mix(in srgb, var(--color-neutral-50) 15%, black 85%);
+    --color-neutral-contrast-90: color-mix(in srgb, var(--color-neutral-50) 10%, black 90%);
+
     --color-primary-10: color-mix(in srgb, var(--color-primary-50) 100%, white 80%);
     --color-primary-20: color-mix(in srgb, var(--color-primary-50) 100%, white 60%);
     --color-primary-30: color-mix(in srgb, var(--color-primary-50) 100%, white 40%);

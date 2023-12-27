@@ -4,7 +4,7 @@ import { FontHeadSize } from '@libs/ui/enums/font-head-size';
 import { Color } from '../../enums/color.enum';
 
 export class TypoHeadingGlobals {
-    public static Color: Color = Color.Neutral;
+    public static Color: Color = Color.Unknown;
     public static FontFamily: FontFamily = FontFamily.SansSerif;
 
     public static FontWeight: FontWeight = FontWeight.Bold;
