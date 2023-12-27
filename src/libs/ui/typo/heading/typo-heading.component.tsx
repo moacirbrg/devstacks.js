@@ -1,3 +1,4 @@
+import "./typo-heading.component.scss";
 import { FrameworkElement } from "@libs/core/framework-element";
 import { Component } from "@libs/core/component";
 import { ComponentProps } from "@libs/core/component-props";
@@ -7,26 +8,35 @@ import { FontWeight } from '@libs/ui/enums/font-weight.enum';
 import { FontFamily } from '@libs/ui/enums/font-family.enum';
 import { Styles } from '@libs/ui/styles';
 import { FontHeadSize } from '@libs/ui/enums/font-head-size';
+import { Color } from "@libs/ui/enums/color.enum";
 
 export interface TypoHeadingProps extends ComponentProps {
-    Size: FontHeadSize;
-    Weight?: FontWeight;
+    FontSize: FontHeadSize;
+
+    Color?: Color;
+    FontWeight?: FontWeight;
     FontFamily?: FontFamily;
 }
 
 export class TypoHeading extends Component<TypoHeadingProps> {
     public render(): FrameworkElement {
         const element: FrameworkElement = (
-            <div class={`typo-heading-component ${this.props.Size}`}>
+            <div class={`typo-heading-component ${this.props.FontSize}`}>
                 {this.children}
             </div>
         );
 
-        Styles.setFontWeight(element, this.props.Weight || TypoHeadingGlobals.getWeight(this.props.Size));
-        Styles.setFontSize(element, this.props.Size);
+        Styles.setDataColor(element, this.props.Color || TypoHeadingGlobals.Color);
+        Styles.setFontWeight(element, this.props.FontWeight || TypoHeadingGlobals.getWeight(this.props.FontSize));
+        Styles.setFontSize(element, this.props.FontSize);
         Styles.setFontFamily(element, this.props.FontFamily || TypoHeadingGlobals.FontFamily);
 
         return element;
+    }
+
+    public setColor(color: Color): void {
+        this.props.Color = color;
+        Styles.setDataColor(this.element!, color);
     }
 
     public setFontFamily(fontFamily: FontFamily): void {
@@ -34,13 +44,13 @@ export class TypoHeading extends Component<TypoHeadingProps> {
         Styles.setFontFamily(this.element!, fontFamily);
     }
 
-    public setSize(size: FontHeadSize): void {
-        this.props.Size = size;
+    public setFontSize(size: FontHeadSize): void {
+        this.props.FontSize = size;
         Styles.setFontSize(this.element!, size);
     }
 
-    public setWeight(weight: FontWeight): void {
-        this.props.Weight = weight;
+    public setFontWeight(weight: FontWeight): void {
+        this.props.FontWeight = weight;
         Styles.setFontWeight(this.element!, weight);
     }
 

@@ -1,0 +1,7 @@
+.typo-heading-component {
+    &[data-color=neutral] { color: var(--color-body-contrast-50); }
+    &[data-color=danger] { color: var(--color-danger); }
+    &[data-color=info] { color: var(--color-info); }
+    &[data-color=success] { color: var(--color-success); }
+    &[data-color=warning] { color: var(--color-warning); }
+}

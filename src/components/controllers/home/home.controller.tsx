@@ -8,7 +8,7 @@ export class HomeController extends Component {
     public render(): FrameworkElement {
         return (
             <div class="home-controller">
-                <TypoHeading Size={FontHeadSize.H1}>Home</TypoHeading>
+                <TypoHeading FontSize={FontHeadSize.H1}>Home</TypoHeading>
                 <p>Take a look at the samples:</p>
                 <ul>
                     <li><a routerLink="/samples/typo-heading">Typo Heading</a></li>

@@ -8,35 +8,44 @@ import { FontFamily } from '@libs/ui/enums/font-family.enum';
 import { FontWeight } from '@libs/ui/enums/font-weight.enum';
 import { TypoMessageGlobals } from '@libs/ui/typo/message/typo-message.globals';
 import { Styles } from '@libs/ui/styles';
+import { FontContentSize } from '@libs/ui/enums/font-content-size.enum';
 
 export interface TypoMessageProps extends ComponentProps {
-    Color: Color;
+    Color?: Color;
     FontFamily?: FontFamily;
+    FontSize?: FontContentSize;
     FontWeight?: FontWeight;
 }
 
 export class TypoMessage extends Component<TypoMessageProps> {
     public render(): FrameworkElement {
         const element = (
-            <div class={`typo-message-component`} data-color={this.props.Color}>
+            <div class={`typo-message-component`}>
                 {this.children}
             </div>
         );
 
+        Styles.setDataColor(element, this.props.Color || TypoMessageGlobals.Color);
         Styles.setFontFamily(element, this.props.FontFamily || TypoMessageGlobals.FontFamily);
-        Styles.setFontWeight(element, this.props.FontWeight || TypoMessageGlobals.Weight);
+        Styles.setFontSize(element, this.props.FontSize || TypoMessageGlobals.FontSize);
+        Styles.setFontWeight(element, this.props.FontWeight || TypoMessageGlobals.FontWeight);
 
         return element;
     }
 
     public setColor(color: Color): void {
         this.props.Color = color;
-        DOM.setAttribute(this.element!, 'data-color', color);
+        Styles.setDataColor(this.element!, color);
     }
 
     public setFontFamily(fontFamily: FontFamily): void {
         this.props.FontFamily = fontFamily;
         Styles.setFontFamily(this.element!, fontFamily);
+    }
+
+    public setFontSize(fontSize: FontContentSize): void {
+        this.props.FontSize = fontSize;
+        Styles.setFontSize(this.element!, fontSize);
     }
 
     public setFontWeight(fontWeight: FontWeight): void {
