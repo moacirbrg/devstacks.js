@@ -57,7 +57,7 @@ export class DOM {
         }
 
         try {
-            const component: Component<ComponentProps> = new tag(props) as Component<ComponentProps>;
+            const component: Component<ComponentProps> = new tag(props || {}) as Component<ComponentProps>;
             component.children = contents;
 
             const rendered = component.render();

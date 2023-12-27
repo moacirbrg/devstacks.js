@@ -6,13 +6,13 @@ import { FontFamily } from '@libs/ui/enums/font-family.enum';
 import { TypoMessage } from '@libs/ui/typo/message/typo-message.component';
 import { Color } from '@libs/ui/enums/color.enum';
 import { FontWeight } from '@libs/ui/enums/font-weight.enum';
-import { FontHeadSize } from '@libs/ui/enums/font-head-size';
+import { TypoHeadingType } from '@libs/ui/typo/heading/typo-heading-type';
 
 export class SampleTypoMessageController extends Component {
     public render(): FrameworkElement {
         return (
             <div class="sample-typo-heading-controller">
-                <TypoHeading FontSize={FontHeadSize.H2}>Light</TypoHeading>
+                <TypoHeading Type={TypoHeadingType.H2}>Light</TypoHeading>
                 <TypoMessage Color={Color.Unknown} FontWeight={FontWeight.Light}>Light Unknown Message</TypoMessage>
                 <TypoMessage Color={Color.Neutral} FontWeight={FontWeight.Light}>Light Neutral Message</TypoMessage>
                 <TypoMessage Color={Color.Primary} FontWeight={FontWeight.Light}>Light Primary Message</TypoMessage>
@@ -22,7 +22,7 @@ export class SampleTypoMessageController extends Component {
                 <TypoMessage Color={Color.Warning} FontWeight={FontWeight.Light}>Light Warning Message</TypoMessage>
                 <TypoMessage Color={Color.Info} FontWeight={FontWeight.Light}>Light Info Message</TypoMessage>
 
-                <TypoHeading FontSize={FontHeadSize.H2}>Regular</TypoHeading>
+                <TypoHeading Type={TypoHeadingType.H2}>Regular</TypoHeading>
                 <TypoMessage Color={Color.Unknown} FontWeight={FontWeight.Regular}>Regular Unknown Message</TypoMessage>
                 <TypoMessage Color={Color.Neutral} FontWeight={FontWeight.Regular}>Regular Neutral Message</TypoMessage>
                 <TypoMessage Color={Color.Primary} FontWeight={FontWeight.Regular}>Regular Primary Message</TypoMessage>
@@ -32,7 +32,7 @@ export class SampleTypoMessageController extends Component {
                 <TypoMessage Color={Color.Warning} FontWeight={FontWeight.Regular}>Regular Warning Message</TypoMessage>
                 <TypoMessage Color={Color.Info} FontWeight={FontWeight.Regular}>Regular Info Message</TypoMessage>
 
-                <TypoHeading FontSize={FontHeadSize.H2}>Bold</TypoHeading>
+                <TypoHeading Type={TypoHeadingType.H2}>Bold</TypoHeading>
                 <TypoMessage Color={Color.Unknown} FontWeight={FontWeight.Bold}>Bold Unknown Message</TypoMessage>
                 <TypoMessage Color={Color.Neutral} FontWeight={FontWeight.Bold}>Bold Neutral Message</TypoMessage>
                 <TypoMessage Color={Color.Primary} FontWeight={FontWeight.Bold}>Bold Primary Message</TypoMessage>
@@ -42,7 +42,7 @@ export class SampleTypoMessageController extends Component {
                 <TypoMessage Color={Color.Warning} FontWeight={FontWeight.Bold}>Bold Warning Message</TypoMessage>
                 <TypoMessage Color={Color.Info} FontWeight={FontWeight.Bold}>Bold Info Message</TypoMessage>
 
-                <TypoHeading FontSize={FontHeadSize.H2}>Sans-Serif</TypoHeading>
+                <TypoHeading Type={TypoHeadingType.H2}>Sans-Serif</TypoHeading>
                 <TypoMessage Color={Color.Unknown}>Sans-Serif Unknown Message</TypoMessage>
                 <TypoMessage Color={Color.Neutral}>Sans-Serif Neutral Message</TypoMessage>
                 <TypoMessage Color={Color.Primary}>Sans-Serif Primary Message</TypoMessage>
@@ -52,7 +52,7 @@ export class SampleTypoMessageController extends Component {
                 <TypoMessage Color={Color.Warning}>Sans-Serif Warning Message</TypoMessage>
                 <TypoMessage Color={Color.Info}>Sans-Serif Info Message</TypoMessage>
 
-                <TypoHeading FontSize={FontHeadSize.H2}>Serif</TypoHeading>
+                <TypoHeading Type={TypoHeadingType.H2}>Serif</TypoHeading>
                 <TypoMessage Color={Color.Unknown} FontFamily={FontFamily.Serif}>Serif Unknown Message</TypoMessage>
                 <TypoMessage Color={Color.Neutral} FontFamily={FontFamily.Serif}>Serif Neutral Message</TypoMessage>
                 <TypoMessage Color={Color.Primary} FontFamily={FontFamily.Serif}>Serif Primary Message</TypoMessage>
@@ -62,7 +62,7 @@ export class SampleTypoMessageController extends Component {
                 <TypoMessage Color={Color.Warning} FontFamily={FontFamily.Serif}>Serif Warning Message</TypoMessage>
                 <TypoMessage Color={Color.Info} FontFamily={FontFamily.Serif}>Serif Info Message</TypoMessage>
 
-                <TypoHeading FontSize={FontHeadSize.H2}>Monospace</TypoHeading>
+                <TypoHeading Type={TypoHeadingType.H2}>Monospace</TypoHeading>
                 <TypoMessage Color={Color.Unknown} FontFamily={FontFamily.Monospace}>Monospace Unknown Message</TypoMessage>
                 <TypoMessage Color={Color.Neutral} FontFamily={FontFamily.Monospace}>Monospace Neutral Message</TypoMessage>
                 <TypoMessage Color={Color.Primary} FontFamily={FontFamily.Monospace}>Monospace Primary Message</TypoMessage>
@@ -72,7 +72,7 @@ export class SampleTypoMessageController extends Component {
                 <TypoMessage Color={Color.Warning} FontFamily={FontFamily.Monospace}>Monospace Warning Message</TypoMessage>
                 <TypoMessage Color={Color.Info} FontFamily={FontFamily.Monospace}>Monospace Info Message</TypoMessage>
 
-                <TypoHeading FontSize={FontHeadSize.H2}>Multi-line</TypoHeading>
+                <TypoHeading Type={TypoHeadingType.H2}>Multi-line</TypoHeading>
                 <TypoMessage Color={Color.Unknown}>
                     Multi-line Unknown Message: It is a long established fact that a
                     reader will be distracted by the readable content of a page when looking at its layout. The point of

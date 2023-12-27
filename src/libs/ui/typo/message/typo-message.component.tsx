@@ -8,12 +8,12 @@ import { FontFamily } from '@libs/ui/enums/font-family.enum';
 import { FontWeight } from '@libs/ui/enums/font-weight.enum';
 import { TypoMessageGlobals } from '@libs/ui/typo/message/typo-message.globals';
 import { Styles } from '@libs/ui/styles';
-import { FontContentSize } from '@libs/ui/enums/font-content-size.enum';
+import { FontSize } from '@libs/ui/enums/font-content-size.enum';
 
 export interface TypoMessageProps extends ComponentProps {
     Color?: Color;
     FontFamily?: FontFamily;
-    FontSize?: FontContentSize;
+    FontSize?: FontSize;
     FontWeight?: FontWeight;
 }
 
@@ -43,7 +43,7 @@ export class TypoMessage extends Component<TypoMessageProps> {
         Styles.setFontFamily(this.element!, fontFamily);
     }
 
-    public setFontSize(fontSize: FontContentSize): void {
+    public setFontSize(fontSize: FontSize): void {
         this.props.FontSize = fontSize;
         Styles.setFontSize(this.element!, fontSize);
     }

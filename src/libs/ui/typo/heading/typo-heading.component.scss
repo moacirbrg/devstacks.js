@@ -1,4 +1,34 @@
 .typo-heading-component {
+    &[data-type=h1] {
+        font-size: var(--font-size-h1);
+        margin: var(--layout-gap-vertical-lg) 0;
+    }
+
+    &[data-type=h2] {
+        font-size: var(--font-size-h2);
+        margin: var(--layout-gap-vertical-lg) 0;
+    }
+
+    &[data-type=h3] {
+        font-size: var(--font-size-h3);
+        margin: var(--layout-gap-vertical-md) 0;
+    }
+
+    &[data-type=h4] {
+        font-size: var(--font-size-h4);
+        margin: var(--layout-gap-vertical-md) 0;
+    }
+
+    &[data-type=h5] {
+        font-size: var(--font-size-h5);
+        margin: var(--layout-gap-vertical-md) 0;
+    }
+
+    &[data-type=h6] {
+        font-size: var(--font-size-h6);
+        margin: var(--layout-gap-vertical-sm) 0;
+    }
+
     &[data-color=unknown] { color: var(--color-body-contrast-50); }
     &[data-color=neutral] { color: var(--color-neutral-70); }
     &[data-color=primary] { color: var(--color-primary-70); }

@@ -7,11 +7,11 @@ import { TypoHeadingGlobals } from '@libs/ui/typo/heading/typo-heading.globals';
 import { FontWeight } from '@libs/ui/enums/font-weight.enum';
 import { FontFamily } from '@libs/ui/enums/font-family.enum';
 import { Styles } from '@libs/ui/styles';
-import { FontHeadSize } from '@libs/ui/enums/font-head-size';
+import { TypoHeadingType } from '@libs/ui/typo/heading/typo-heading-type';
 import { Color } from "@libs/ui/enums/color.enum";
 
 export interface TypoHeadingProps extends ComponentProps {
-    FontSize: FontHeadSize;
+    Type: TypoHeadingType;
 
     Color?: Color;
     FontWeight?: FontWeight;
@@ -21,14 +21,14 @@ export interface TypoHeadingProps extends ComponentProps {
 export class TypoHeading extends Component<TypoHeadingProps> {
     public render(): FrameworkElement {
         const element: FrameworkElement = (
-            <div class={`typo-heading-component ${this.props.FontSize}`}>
+            <div class={`typo-heading-component ${this.props.Type}`}>
                 {this.children}
             </div>
         );
 
         Styles.setDataColor(element, this.props.Color || TypoHeadingGlobals.Color);
-        Styles.setFontWeight(element, this.props.FontWeight || TypoHeadingGlobals.getWeight(this.props.FontSize));
-        Styles.setFontSize(element, this.props.FontSize);
+        Styles.setFontWeight(element, this.props.FontWeight || TypoHeadingGlobals.getWeight(this.props.Type));
+        this._setType(element, this.props.Type);
         Styles.setFontFamily(element, this.props.FontFamily || TypoHeadingGlobals.FontFamily);
 
         return element;
@@ -44,9 +44,13 @@ export class TypoHeading extends Component<TypoHeadingProps> {
         Styles.setFontFamily(this.element!, fontFamily);
     }
 
-    public setFontSize(size: FontHeadSize): void {
-        this.props.FontSize = size;
-        Styles.setFontSize(this.element!, size);
+    private _setType(element: FrameworkElement, type: TypoHeadingType): void {
+        DOM.setAttribute(element, 'data-type', type);
+    }
+
+    public setType(size: TypoHeadingType): void {
+        this.props.Type = size;
+        this._setType(this.element!, size);
     }
 
     public setFontWeight(weight: FontWeight): void {

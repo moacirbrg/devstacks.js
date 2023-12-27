@@ -1,4 +1,4 @@
-export enum FontContentSize {
+export enum FontSize {
     ExtraSmall = '--font-size-xs',
     Small = '--font-size-sm',
     Medium = '--font-size-md',

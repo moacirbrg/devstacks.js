@@ -1,3 +1,4 @@
+import "./form-button.component.scss";
 import { FrameworkElement } from '@libs/core/framework-element';
 import { Component } from '@libs/core/component';
 import { ComponentProps } from '@libs/core/component-props';
@@ -7,21 +8,21 @@ import { FontWeight } from '@libs/ui/enums/font-weight.enum';
 import { DOM } from '@libs/core/dom';
 import { Styles } from '@libs/ui/styles';
 import { FormButtonGlobals } from '@libs/ui/form/button/form-button.globals';
-import { FontContentSize } from '@libs/ui/enums/font-content-size.enum';
+import { FontSize } from '@libs/ui/enums/font-content-size.enum';
 
 export interface FormButtonProps extends ComponentProps {
     Color?: Color;
     FontFamily?: FontFamily;
-    FontSize?: FontContentSize;
+    FontSize?: FontSize;
     FontWeight?: FontWeight;
 }
 
 export class FormButton extends Component<FormButtonProps> {
     public render(): FrameworkElement {
         const element: FrameworkElement = (
-            <div class="form-button-component">
+            <button class="form-button-component">
                 {this.children}
-            </div>
+            </button>
         );
 
         Styles.setDataColor(element, this.props.Color || FormButtonGlobals.Color);
@@ -42,7 +43,7 @@ export class FormButton extends Component<FormButtonProps> {
         Styles.setFontFamily(this.element!, fontFamily);
     }
 
-    public setFontSize(fontSize: FontContentSize): void {
+    public setFontSize(fontSize: FontSize): void {
         this.props.FontSize = fontSize;
         Styles.setFontSize(this.element!, fontSize);
     }
