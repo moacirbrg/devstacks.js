@@ -9,6 +9,10 @@ type JSXContent = string[] | HTMLElement[];
 type ComponentType = Class<Component<unknown>>;
 
 export class DOM {
+    public static appendChild(parent: Element, child: Element): void {
+        parent.appendChild(child);
+    }
+
     public static clearChildren(parent: Element): void {
         if (parent === null || parent === undefined) {
             return;
