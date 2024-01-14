@@ -18,7 +18,7 @@
 
     // medium size: default
     --component-size-md-border-radius: var(--layout-brd-radius-md);
-    --component-size-md-border-width: 2px;
+    --component-size-md-border-width: 0.125rem;
     --component-size-md-height: var(--layout-nontable-row-height-md);
     --component-size-md-font-size: var(--font-size-md);
     --component-size-md-font-weight: var(--font-weight-regular);
@@ -27,7 +27,7 @@
 
     // large size
     --component-size-lg-border-radius: var(--layout-brd-radius-md);
-    --component-size-lg-border-width: 3px;
+    --component-size-lg-border-width: 0.25rem;
     --component-size-lg-height: var(--layout-nontable-row-height-lg);
     --component-size-lg-font-size: var(--font-size-xl);
     --component-size-lg-font-weight: var(--font-weight-bold);
