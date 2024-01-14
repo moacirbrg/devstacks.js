@@ -1,0 +1,37 @@
+.form-button-component {
+    // ALL SIZES
+    // ----------------------------------------------------
+    --component-font-family: var(--font-family-sans-serif);
+    --component-border-style: solid;
+    --component-border-disabled-opacity: 0.5;
+
+    // SIZES
+    // ----------------------------------------------------
+    // small size
+    --component-size-sm-border-radius: var(--layout-brd-radius-md);
+    --component-size-sm-border-width: 1px;
+    --component-size-sm-height: var(--layout-nontable-row-height-sm);
+    --component-size-sm-font-size: var(--font-size-xs);
+    --component-size-sm-font-weight: var(--font-weight-bold);
+    --component-size-sm-margin-bottom: var(--layout-gap-vertical-sm);
+    --component-size-sm-padding: 0 var(--layout-nontable-padding-sm);
+
+    // medium size: default
+    --component-size-md-border-radius: var(--layout-brd-radius-md);
+    --component-size-md-border-width: 2px;
+    --component-size-md-height: var(--layout-nontable-row-height-md);
+    --component-size-md-font-size: var(--font-size-md);
+    --component-size-md-font-weight: var(--font-weight-regular);
+    --component-size-md-margin-bottom: var(--layout-gap-vertical-md);
+    --component-size-md-padding: 0 var(--layout-nontable-padding-md);
+
+    // large size
+    --component-size-lg-border-radius: var(--layout-brd-radius-md);
+    --component-size-lg-border-width: 3px;
+    --component-size-lg-height: var(--layout-nontable-row-height-lg);
+    --component-size-lg-font-size: var(--font-size-xl);
+    --component-size-lg-font-weight: var(--font-weight-bold);
+    --component-size-lg-margin-bottom: var(--layout-gap-vertical-lg);
+    --component-size-lg-padding: 0 var(--layout-nontable-padding-lg);
+
+}

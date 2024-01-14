@@ -39,10 +39,11 @@ const webpack = {
     },
     resolve: {
         alias: {
-            '@src': path.resolve(__dirname, 'src/'),
+            '@assets': path.resolve(__dirname, 'assets/'),
             '@components': path.resolve(__dirname, 'src/components/'),
             '@libs': path.resolve(__dirname, 'src/libs/'),
-            '@assets': path.resolve(__dirname, 'assets/')
+            '@src': path.resolve(__dirname, 'src/'),
+            '@styles': path.resolve(__dirname, 'src/styles/'),
         },
         extensions: ['.ts', '.tsx', '.js'],
     },

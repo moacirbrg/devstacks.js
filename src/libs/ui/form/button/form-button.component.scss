@@ -1,15 +1,41 @@
 .form-button-component {
-    border-width: 1px;
-    border-style: solid;
-    border-radius: var(--layout-brd-radius-md);
-    height: var(--layout-nontable-row-height-md);
-    margin-bottom: var(--layout-gap-vertical-md);
-    padding: 0 var(--layout-nontable-padding-md);
+    border-style: var(--component-border-style);
+    font-family: var(--component-font-family);
     cursor: pointer;
 
     &:disabled {
         cursor: not-allowed;
-        opacity: 0.5;
+        opacity: var(--component-border-disabled-opacity);
+    }
+
+    &[data-size=sm] {
+        border-radius: var(--component-size-sm-border-radius);
+        border-width: var(--component-size-sm-border-width);
+        height: var(--component-size-sm-height);
+        font-size: var(--component-size-sm-font-size);
+        font-weight: var(--component-size-sm-font-weight);
+        margin-bottom: var(--component-size-sm-margin-bottom);
+        padding: var(--component-size-sm-padding);
+    }
+
+    &[data-size=md] {
+        border-radius: var(--component-size-md-border-radius);
+        border-width: var(--component-size-md-border-width);
+        height: var(--component-size-md-height);
+        font-size: var(--component-size-md-font-size);
+        font-weight: var(--component-size-md-font-weight);
+        margin-bottom: var(--component-size-md-margin-bottom);
+        padding: var(--component-size-md-padding);
+    }
+
+    &[data-size=lg] {
+        border-radius: var(--component-size-lg-border-radius);
+        border-width: var(--component-size-lg-border-width);
+        height: var(--component-size-lg-height);
+        font-size: var(--component-size-lg-font-size);
+        font-weight: var(--component-size-lg-font-weight);
+        margin-bottom: var(--component-size-lg-margin-bottom);
+        padding: var(--component-size-lg-padding);
     }
 
     &[data-color=unknown] {

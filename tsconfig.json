@@ -14,10 +14,11 @@
         "sourceMap": true,
         "baseUrl": ".",
         "paths": {
-            "@src/*": ["./src/*"],
+            "@assets/*": ["assets/*"],
             "@components/*": ["src/components/*"],
             "@libs/*": ["src/libs/*"],
-            "@assets/*": ["assets/*"]
+            "@src/*": ["./src/*"],
+            "styles/*": ["./src/styles/*"]
         }
     }
 }

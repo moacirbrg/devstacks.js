@@ -2,7 +2,6 @@ import "./form-button.component.scss";
 import { FrameworkElement } from '@libs/core/framework-element';
 import { Component } from '@libs/core/component';
 import { ComponentProps } from '@libs/core/component-props';
-import { Color } from "@libs/ui/enums/color.enum";
 import { FontFamily } from '@libs/ui/enums/font-family.enum';
 import { FontWeight } from '@libs/ui/enums/font-weight.enum';
 import { DOM } from '@libs/core/dom';
