@@ -39,86 +39,86 @@
     }
 
     &[data-color=unknown] {
-        background-color: var(--color-body-10);
-        border-color: var(--color-body-30);
-        color: var(--color-body-contrast-10);
+        background-color: var(--component-color-unknown-background-color);
+        border-color: var(--component-color-unknown-border-color);
+        color: var(--component-color-unknown-color);
 
         &:hover {
-            background-color: var(--color-body-40);
-            border-color: var(--color-body-60);
-            color: var(--color-body-contrast-40);
+            background-color: var(--component-color-unknown-hover-background-color);
+            border-color: var(--component-color-unknown-hover-border-color);
+            color: var(--component-color-unknown-hover-color);
         }
     }
 
     &[data-color=primary] {
-        background-color: var(--color-primary-50);
-        border-color: var(--color-primary-60);
-        color: var(--color-primary-contrast-50);
+        background-color: var(--component-color-primary-background-color);
+        border-color: var(--component-color-primary-border-color);
+        color: var(--component-color-primary-color);
 
         &:hover {
-            background-color: var(--color-primary-70);
-            border-color: var(--color-primary-80);
-            color: var(--color-primary-contrast-60);
+            background-color: var(--component-color-primary-hover-background-color);
+            border-color: var(--component-color-primary-hover-border-color);
+            color: var(--component-color-primary-hover-color);
         }
     }
 
     &[data-color=secondary] {
-        background-color: var(--color-secondary-50);
-        border-color: var(--color-secondary-60);
-        color: var(--color-secondary-contrast-50);
+        background-color: var(--component-color-secondary-background-color);
+        border-color: var(--component-color-secondary-border-color);
+        color: var(--component-color-secondary-color);
 
         &:hover {
-            background-color: var(--color-secondary-70);
-            border-color: var(--color-secondary-80);
-            color: var(--color-secondary-contrast-60);
+            background-color: var(--component-color-secondary-hover-background-color);
+            border-color: var(--component-color-secondary-hover-border-color);
+            color: var(--component-color-secondary-hover-color);
         }
     }
 
     &[data-color=danger] {
-        background-color: var(--color-danger-50);
-        border-color: var(--color-danger-60);
-        color: var(--color-danger-contrast-50);
+        background-color: var(--component-color-danger-background-color);
+        border-color: var(--component-color-danger-border-color);
+        color: var(--component-color-danger-color);
 
         &:hover {
-            background-color: var(--color-danger-70);
-            border-color: var(--color-danger-80);
-            color: var(--color-danger-contrast-60);
+            background-color: var(--component-color-danger-hover-background-color);
+            border-color: var(--component-color-danger-hover-border-color);
+            color: var(--component-color-danger-hover-color);
         }
     }
 
     &[data-color=info] {
-        background-color: var(--color-info-50);
-        border-color: var(--color-info-60);
-        color: var(--color-info-contrast-50);
+        background-color: var(--component-color-info-background-color);
+        border-color: var(--component-color-info-border-color);
+        color: var(--component-color-info-color);
 
         &:hover {
-            background-color: var(--color-info-70);
-            border-color: var(--color-info-80);
-            color: var(--color-info-contrast-60);
+            background-color: var(--component-color-info-hover-background-color);
+            border-color: var(--component-color-info-hover-border-color);
+            color: var(--component-color-info-hover-color);
         }
     }
 
     &[data-color=success] {
-        background-color: var(--color-success-50);
-        border-color: var(--color-success-60);
-        color: var(--color-success-contrast-50);
+        background-color: var(--component-color-success-background-color);
+        border-color: var(--component-color-success-border-color);
+        color: var(--component-color-success-color);
 
         &:hover {
-            background-color: var(--color-success-70);
-            border-color: var(--color-success-80);
-            color: var(--color-success-contrast-60);
+            background-color: var(--component-color-success-hover-background-color);
+            border-color: var(--component-color-success-hover-border-color);
+            color: var(--component-color-success-hover-color);
         }
     }
 
     &[data-color=warning] {
-        background-color: var(--color-warning-50);
-        border-color: var(--color-warning-60);
-        color: var(--color-warning-contrast-50);
+        background-color: var(--component-color-warning-background-color);
+        border-color: var(--component-color-warning-border-color);
+        color: var(--component-color-warning-color);
 
         &:hover {
-            background-color: var(--color-warning-70);
-            border-color: var(--color-warning-80);
-            color: var(--color-warning-contrast-60);
+            background-color: var(--component-color-warning-hover-background-color);
+            border-color: var(--component-color-warning-hover-border-color);
+            color: var(--component-color-warning-hover-color);
         }
     }
 }

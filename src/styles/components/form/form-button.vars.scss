@@ -1,5 +1,5 @@
 .form-button-component {
-    // ALL SIZES
+    // PROPERTY INDEPENDENT
     // ----------------------------------------------------
     --component-font-family: var(--font-family-sans-serif);
     --component-border-style: solid;
@@ -34,4 +34,61 @@
     --component-size-lg-margin-bottom: var(--layout-gap-vertical-lg);
     --component-size-lg-padding: 0 var(--layout-nontable-padding-lg);
 
+    // COLORS
+    // ----------------------------------------------------
+    // unknown color
+    --component-color-unknown-background-color: var(--color-body-10);
+    --component-color-unknown-border-color: var(--color-body-30);
+    --component-color-unknown-color: var(--color-body-contrast-10);
+    --component-color-unknown-hover-background-color: var(--color-body-40);
+    --component-color-unknown-hover-border-color: var(--color-body-60);
+    --component-color-unknown-hover-color: var(--color-body-contrast-40);
+
+    // primary color
+    --component-color-primary-background-color: var(--color-primary-50);
+    --component-color-primary-border-color: var(--color-primary-60);
+    --component-color-primary-color: var(--color-primary-contrast-50);
+    --component-color-primary-hover-background-color: var(--color-primary-70);
+    --component-color-primary-hover-border-color: var(--color-primary-80);
+    --component-color-primary-hover-color: var(--color-primary-contrast-60);
+
+    // secondary color
+    --component-color-secondary-background-color: var(--color-secondary-50);
+    --component-color-secondary-border-color: var(--color-secondary-60);
+    --component-color-secondary-color: var(--color-secondary-contrast-50);
+    --component-color-secondary-hover-background-color: var(--color-secondary-70);
+    --component-color-secondary-hover-border-color: var(--color-secondary-80);
+    --component-color-secondary-hover-color: var(--color-secondary-contrast-60);
+
+    // danger color
+    --component-color-danger-background-color: var(--color-danger-50);
+    --component-color-danger-border-color: var(--color-danger-60);
+    --component-color-danger-color: var(--color-danger-contrast-50);
+    --component-color-danger-hover-background-color: var(--color-danger-70);
+    --component-color-danger-hover-border-color: var(--color-danger-80);
+    --component-color-danger-hover-color: var(--color-danger-contrast-60);
+
+    // info color
+    --component-color-info-background-color: var(--color-info-50);
+    --component-color-info-border-color: var(--color-info-60);
+    --component-color-info-color: var(--color-info-contrast-50);
+    --component-color-info-hover-background-color: var(--color-info-70);
+    --component-color-info-hover-border-color: var(--color-info-80);
+    --component-color-info-hover-color: var(--color-info-contrast-60);
+
+    // success color
+    --component-color-success-background-color: var(--color-success-50);
+    --component-color-success-border-color: var(--color-success-60);
+    --component-color-success-color: var(--color-success-contrast-50);
+    --component-color-success-hover-background-color: var(--color-success-70);
+    --component-color-success-hover-border-color: var(--color-success-80);
+    --component-color-success-hover-color: var(--color-success-contrast-60);
+
+    // warning color
+    --component-color-warning-background-color: var(--color-warning-50);
+    --component-color-warning-border-color: var(--color-warning-60);
+    --component-color-warning-color: var(--color-warning-contrast-50);
+    --component-color-warning-hover-background-color: var(--color-warning-70);
+    --component-color-warning-hover-border-color: var(--color-warning-80);
+    --component-color-warning-hover-color: var(--color-warning-contrast-60);
 }
