@@ -1,0 +1,186 @@
+.typo-heading-component {
+    // SHAPE
+    // ----------------------------------------------------
+    // h1
+    --component-h1-brd-style: solid;
+    --component-h1-brd-weight: 0;
+    --component-h1-font-family: var(--font-family-sans-serif);
+    --component-h1-font-size: var(--font-size-h1);
+    --component-h1-font-weight: var(--font-weight-bold);
+    --component-h1-margin: var(--layout-gap-vertical-lg) 0;
+
+    // h2
+    --component-h2-brd-style: solid;
+    --component-h2-brd-weight: 0;
+    --component-h2-font-family: var(--font-family-sans-serif);
+    --component-h2-font-size: var(--font-size-h2);
+    --component-h2-font-weight: var(--font-weight-bold);
+    --component-h2-margin: var(--layout-gap-vertical-lg) 0;
+
+    // h3
+    --component-h3-brd-style: solid;
+    --component-h3-brd-weight: 0;
+    --component-h3-font-family: var(--font-family-sans-serif);
+    --component-h3-font-size: var(--font-size-h3);
+    --component-h3-font-weight: var(--font-weight-bold);
+    --component-h3-margin: var(--layout-gap-vertical-md) 0;
+
+    // h4
+    --component-h4-brd-style: solid;
+    --component-h4-brd-weight: 0;
+    --component-h4-font-family: var(--font-family-sans-serif);
+    --component-h4-font-size: var(--font-size-h4);
+    --component-h4-font-weight: var(--font-weight-bold);
+    --component-h4-margin: var(--layout-gap-vertical-md) 0;
+
+    // h5
+    --component-h5-brd-style: solid;
+    --component-h5-brd-weight: 0;
+    --component-h5-font-family: var(--font-family-sans-serif);
+    --component-h5-font-size: var(--font-size-h5);
+    --component-h5-font-weight: var(--font-weight-bold);
+    --component-h5-margin: var(--layout-gap-vertical-md) 0;
+
+    // h6
+    --component-h6-brd-style: solid;
+    --component-h6-brd-weight: 0;
+    --component-h6-font-family: var(--font-family-sans-serif);
+    --component-h6-font-size: var(--font-size-h6);
+    --component-h6-font-weight: var(--font-weight-bold);
+    --component-h6-margin: var(--layout-gap-vertical-sm) 0;
+
+    // COLORS
+    // ----------------------------------------------------
+    // unknown color
+    --component-h1-unknown-color: var(--component-h1-color);
+    --component-h1-unknown-brd-color: var(--component-h1-brd-color);
+
+    --component-h2-unknown-brd-color: var(--component-h2-color);
+    --component-h2-unknown-color: var(--color-body-contrast-50);
+
+    --component-h3-unknown-brd-color: var(--component-h3-color);
+    --component-h3-unknown-color: var(--color-body-contrast-50);
+
+    --component-h4-unknown-brd-color: var(--component-h4-color);
+    --component-h4-unknown-color: var(--color-body-contrast-50);
+
+    --component-h5-unknown-brd-color: var(--component-h5-color);
+    --component-h5-unknown-color: var(--color-body-contrast-50);
+
+    --component-h6-unknown-brd-color: var(--component-h6-color);
+    --component-h6-unknown-color: var(--color-body-contrast-50);
+
+    // neutral color
+    --component-h1-neutral-color: var(--color-neutral-70);
+    --component-h1-neutral-brd-color: var(--color-neutral-70);
+
+    --component-h2-neutral-brd-color: var(--color-neutral-70);
+    --component-h2-neutral-color: var(--color-neutral-70);
+
+    --component-h3-neutral-brd-color: var(--color-neutral-70);
+    --component-h3-neutral-color: var(--color-neutral-70);
+
+    --component-h4-neutral-brd-color: var(--color-neutral-70);
+    --component-h4-neutral-color: var(--color-neutral-70);
+
+    --component-h5-neutral-brd-color: var(--color-neutral-70);
+    --component-h5-neutral-color: var(--color-neutral-70);
+
+    --component-h6-neutral-brd-color: var(--color-neutral-70);
+    --component-h6-neutral-color: var(--color-neutral-70);
+
+    // primary color
+    --component-h1-primary-color: var(--color-primary-70);
+    --component-h1-primary-brd-color: var(--color-primary-70);
+
+    --component-h2-primary-brd-color: var(--color-primary-70);
+    --component-h2-primary-color: var(--color-primary-70);
+
+    --component-h3-primary-brd-color: var(--color-primary-70);
+    --component-h3-primary-color: var(--color-primary-70);
+
+    --component-h4-primary-brd-color: var(--color-primary-70);
+    --component-h4-primary-color: var(--color-primary-70);
+
+    --component-h5-primary-brd-color: var(--color-primary-70);
+    --component-h5-primary-color: var(--color-primary-70);
+
+    --component-h6-primary-brd-color: var(--color-primary-70);
+    --component-h6-primary-color: var(--color-primary-70);
+
+    // secondary color
+    --component-h1-secondary-color: var(--color-secondary-70);
+    --component-h1-secondary-brd-color: var(--color-secondary-70);
+
+    --component-h2-secondary-brd-color: var(--color-secondary-70);
+    --component-h2-secondary-color: var(--color-secondary-70);
+
+    --component-h3-secondary-brd-color: var(--color-secondary-70);
+    --component-h3-secondary-color: var(--color-secondary-70);
+
+    --component-h4-secondary-brd-color: var(--color-secondary-70);
+    --component-h4-secondary-color: var(--color-secondary-70);
+
+    --component-h5-secondary-brd-color: var(--color-secondary-70);
+    --component-h5-secondary-color: var(--color-secondary-70);
+
+    --component-h6-secondary-brd-color: var(--color-secondary-70);
+    --component-h6-secondary-color: var(--color-secondary-70);
+
+    // danger color
+    --component-h1-danger-color: var(--color-danger-70);
+    --component-h1-danger-brd-color: var(--color-danger-70);
+
+    --component-h2-danger-brd-color: var(--color-danger-70);
+    --component-h2-danger-color: var(--color-danger-70);
+
+    --component-h3-danger-brd-color: var(--color-danger-70);
+    --component-h3-danger-color: var(--color-danger-70);
+
+    --component-h4-danger-brd-color: var(--color-danger-70);
+    --component-h4-danger-color: var(--color-danger-70);
+
+    --component-h5-danger-brd-color: var(--color-danger-70);
+    --component-h5-danger-color: var(--color-danger-70);
+
+    --component-h6-danger-brd-color: var(--color-danger-70);
+    --component-h6-danger-color: var(--color-danger-70);
+
+    // info color
+    --component-h1-info-color: var(--color-info-70);
+    --component-h1-info-brd-color: var(--color-info-70);
+
+    --component-h2-info-brd-color: var(--color-info-70);
+    --component-h2-info-color: var(--color-info-70);
+
+    --component-h3-info-brd-color: var(--color-info-70);
+    --component-h3-info-color: var(--color-info-70);
+
+    --component-h4-info-brd-color: var(--color-info-70);
+    --component-h4-info-color: var(--color-info-70);
+
+    --component-h5-info-brd-color: var(--color-info-70);
+    --component-h5-info-color: var(--color-info-70);
+
+    --component-h6-info-brd-color: var(--color-info-70);
+    --component-h6-info-color: var(--color-info-70);
+
+    // warning color
+    --component-h1-warning-color: var(--color-warning-70);
+    --component-h1-warning-brd-color: var(--color-warning-70);
+
+    --component-h2-warning-brd-color: var(--color-warning-70);
+    --component-h2-warning-color: var(--color-warning-70);
+
+    --component-h3-warning-brd-color: var(--color-warning-70);
+    --component-h3-warning-color: var(--color-warning-70);
+
+    --component-h4-warning-brd-color: var(--color-warning-70);
+    --component-h4-warning-color: var(--color-warning-70);
+
+    --component-h5-warning-brd-color: var(--color-warning-70);
+    --component-h5-warning-color: var(--color-warning-70);
+
+    --component-h6-warning-brd-color: var(--color-warning-70);
+    --component-h6-warning-color: var(--color-warning-70);
+}
