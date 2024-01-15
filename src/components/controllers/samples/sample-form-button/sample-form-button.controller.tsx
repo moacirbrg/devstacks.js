@@ -5,7 +5,7 @@ import { FormButton } from '@libs/ui/form/button/form-button.component';
 import { Color } from '@libs/ui/enums/color.enum';
 import { Size } from '@libs/ui/enums/size.enum';
 import { TypoHeading } from '@libs/ui/typo/heading/typo-heading.component';
-import { TypoHeadingType } from '@libs/ui/typo/heading/typo-heading-type';
+import { TypoHeadingType } from '@libs/ui/typo/heading/typo-heading-type.enum';
 
 export class SampleFormButtonController extends Component {
     public render(): FrameworkElement {

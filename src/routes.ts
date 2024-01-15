@@ -6,6 +6,9 @@ import { SampleTypoMessageController } from '@components/controllers/samples/sam
 import {
     SampleFormButtonController
 } from '@components/controllers/samples/sample-form-button/sample-form-button.controller';
+import {
+    SampleFormTextFieldController
+} from '@components/controllers/samples/sampel-form-text-field/sample-form-text-field.controller';
 
 export class Routes {
     public static Build(): void {
@@ -17,6 +20,16 @@ export class Routes {
             },
             {
                 canActive: [],
+                component: SampleFormButtonController as typeof Component,
+                path: '/samples/form-button',
+            },
+            {
+                canActive: [],
+                component: SampleFormTextFieldController as typeof Component,
+                path: '/samples/form-text-field',
+            },
+            {
+                canActive: [],
                 component: SampleTypoHeadingController as typeof Component,
                 path: '/samples/typo-heading',
             },
@@ -24,11 +37,6 @@ export class Routes {
                 canActive: [],
                 component: SampleTypoMessageController as typeof Component,
                 path: '/samples/typo-message',
-            },
-            {
-                canActive: [],
-                component: SampleFormButtonController as typeof Component,
-                path: '/samples/form-button',
             }
         ]);
     }

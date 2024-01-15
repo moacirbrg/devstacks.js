@@ -1,13 +1,14 @@
-import "./form-button.component.scss";
+import "./form-text-field.component.scss";
 import { FrameworkElement } from '@libs/core/framework-element';
 import { Component } from '@libs/core/component';
 import { ComponentProps } from '@libs/core/component-props';
 import { DOM } from '@libs/core/dom';
+import { FormTextFieldType } from '@libs/ui/form/text-field/form-text-field-type.enum';
 
 export interface FormTextFieldProps extends ComponentProps {
     Label?: string;
     Placeholder?: string;
-    Type?: string;
+    Type?: FormTextFieldType;
     Value?: string;
 }
 

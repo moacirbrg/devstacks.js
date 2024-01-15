@@ -2,7 +2,7 @@ import { FrameworkElement } from '@libs/core/framework-element';
 import { Component } from '@libs/core/component';
 import { DOM } from '@libs/core/dom';
 import { TypoHeading } from '@libs/ui/typo/heading/typo-heading.component';
-import { TypoHeadingType } from '@libs/ui/typo/heading/typo-heading-type';
+import { TypoHeadingType } from '@libs/ui/typo/heading/typo-heading-type.enum';
 import { Color } from '@libs/ui/enums/color.enum';
 
 export class SampleTypoHeadingController extends Component {

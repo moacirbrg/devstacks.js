@@ -5,7 +5,7 @@ import { Component } from "@libs/core/component";
 import { ComponentProps } from "@libs/core/component-props";
 import { DOM } from '@libs/core/dom';
 import { DataAttributes } from '@libs/ui/data-attributes';
-import { TypoHeadingType } from '@libs/ui/typo/heading/typo-heading-type';
+import { TypoHeadingType } from '@libs/ui/typo/heading/typo-heading-type.enum';
 import { Color } from "@libs/ui/enums/color.enum";
 
 export interface TypoHeadingProps extends ComponentProps {

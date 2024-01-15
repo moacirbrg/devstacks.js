@@ -4,7 +4,7 @@ import { DOM } from '@libs/core/dom';
 import { TypoHeading } from '@libs/ui/typo/heading/typo-heading.component';
 import { TypoMessage } from '@libs/ui/typo/message/typo-message.component';
 import { Color } from '@libs/ui/enums/color.enum';
-import { TypoHeadingType } from '@libs/ui/typo/heading/typo-heading-type';
+import { TypoHeadingType } from '@libs/ui/typo/heading/typo-heading-type.enum';
 
 export class SampleTypoMessageController extends Component {
     public render(): FrameworkElement {
