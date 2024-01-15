@@ -1,0 +1,55 @@
+.typo-message-component {
+    // PROPERTY INDEPENDENT
+    // ----------------------------------------------------
+    --component-brd-radius: var(--layout-brd-radius-md);
+    --component-brd-style: solid;
+    --component-brd-width: 1px;
+    --component-font-family: var(--font-family-sans-serif);
+    --component-font-size: var(--font-size-sm);
+    --component-font-weight: var(--font-weight-normal);
+    --component-margin-bottom: var(--layout-gap-vertical-md);
+    --component-min-height: var(--layout-nontable-row-height-md);
+    --component-padding: var(--layout-nontable-padding-sm) var(--layout-nontable-padding-md);
+
+    // COLORS
+    // ----------------------------------------------------
+    // unknown color
+    --component-unknown-background-color: var(--color-body-10);
+    --component-unknown-border-color: var(--color-body-30);
+    --component-unknown-color: var(--color-body-contrast-10);
+
+    // neutral color
+    --component-neutral-background-color: var(--color-neutral-20);
+    --component-neutral-border-color: var(--color-neutral-30);
+    --component-neutral-color: var(--color-neutral-contrast-20);
+
+    // primary color
+    --component-primary-background-color: var(--color-primary-20);
+    --component-primary-border-color: var(--color-primary-30);
+    --component-primary-color: var(--color-primary-contrast-20);
+
+    // secondary color
+    --component-secondary-background-color: var(--color-secondary-20);
+    --component-secondary-border-color: var(--color-secondary-30);
+    --component-secondary-color: var(--color-secondary-contrast-20);
+
+    // danger color
+    --component-danger-background-color: var(--color-danger-20);
+    --component-danger-border-color: var(--color-danger-30);
+    --component-danger-color: var(--color-danger-contrast-20);
+
+    // info color
+    --component-info-background-color: var(--color-info-20);
+    --component-info-border-color: var(--color-info-30);
+    --component-info-color: var(--color-info-contrast-20);
+
+    // success color
+    --component-success-background-color: var(--color-success-20);
+    --component-success-border-color: var(--color-success-30);
+    --component-success-color: var(--color-success-contrast-20);
+
+    // warning color
+    --component-warning-background-color: var(--color-warning-20);
+    --component-warning-border-color: var(--color-warning-30);
+    --component-warning-color: var(--color-warning-contrast-20);
+}
