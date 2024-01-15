@@ -50,6 +50,18 @@
         }
     }
 
+    &[data-color=neutral] {
+        background-color: var(--component-neutral-background-color);
+        border-color: var(--component-neutral-border-color);
+        color: var(--component-neutral-color);
+
+        &:hover {
+            background-color: var(--component-neutral-hover-background-color);
+            border-color: var(--component-neutral-hover-border-color);
+            color: var(--component-neutral-hover-color);
+        }
+    }
+
     &[data-color=primary] {
         background-color: var(--component-primary-background-color);
         border-color: var(--component-primary-border-color);

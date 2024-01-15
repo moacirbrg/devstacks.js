@@ -12,18 +12,19 @@ export class SampleFormButtonController extends Component {
         return (
             <div class="sample-form-button-controller">
                 <TypoHeading Type={TypoHeadingType.H2}>Color</TypoHeading>
-                <FormButton Color={Color.Unknown}>Unknown Button Color</FormButton>&nbsp;
-                <FormButton Color={Color.Primary}>Primary Button Color</FormButton>&nbsp;
-                <FormButton Color={Color.Secondary}>Secondary Button Color</FormButton>&nbsp;
-                <FormButton Color={Color.Danger}>Danger Button Color</FormButton>&nbsp;
-                <FormButton Color={Color.Info}>Info Button Color</FormButton>&nbsp;
-                <FormButton Color={Color.Success}>Success Button Color</FormButton>&nbsp;
-                <FormButton Color={Color.Warning}>Warning Button Color</FormButton>
+                <FormButton Color={Color.Unknown}>Sign up</FormButton>&nbsp;
+                <FormButton Color={Color.Neutral}>Sign up</FormButton>&nbsp;
+                <FormButton Color={Color.Primary}>Sign up</FormButton>&nbsp;
+                <FormButton Color={Color.Secondary}>Sign up</FormButton>&nbsp;
+                <FormButton Color={Color.Danger}>Sign up</FormButton>&nbsp;
+                <FormButton Color={Color.Info}>Sign up</FormButton>&nbsp;
+                <FormButton Color={Color.Success}>Sign up</FormButton>&nbsp;
+                <FormButton Color={Color.Warning}>Sign up</FormButton>
 
                 <TypoHeading Type={TypoHeadingType.H2}>Sizes</TypoHeading>
-                <FormButton Color={Color.Primary} Size={Size.Small}>SMALL</FormButton>&nbsp;
-                <FormButton Color={Color.Primary} Size={Size.Medium}>MEDIUM</FormButton>&nbsp;
-                <FormButton Color={Color.Primary} Size={Size.Large}>LARGE</FormButton>&nbsp;
+                <FormButton Color={Color.Primary} Size={Size.Small}>Sign up</FormButton>&nbsp;
+                <FormButton Color={Color.Primary} Size={Size.Medium}>Sign up</FormButton>&nbsp;
+                <FormButton Color={Color.Primary} Size={Size.Large}>Sign up</FormButton>&nbsp;
             </div>
         );
     }
