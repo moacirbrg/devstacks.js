@@ -5,7 +5,7 @@ import { FrameworkElement } from "@libs/core/framework-element";
 import { Component } from "@libs/core/component";
 import { ComponentProps } from "@libs/core/component-props";
 import { DOM } from '@libs/core/dom';
-import { Styles } from '@libs/ui/styles';
+import { DataAttributes } from '@libs/ui/data-attributes';
 
 export interface TypoMessageProps extends ComponentProps {
     Color?: Color;
@@ -19,13 +19,13 @@ export class TypoMessage extends Component<TypoMessageProps> {
             </div>
         );
 
-        Styles.setDataColor(element, this.props.Color || Color.Unknown);
+        DataAttributes.setDataColor(element, this.props.Color || Color.Unknown);
         return element;
     }
 
     public setColor(color: Color): void {
         this.props.Color = color;
-        Styles.setDataColor(this.element!, color);
+        DataAttributes.setDataColor(this.element!, color);
     }
 
     public setContent(content: string|FrameworkElement): void {

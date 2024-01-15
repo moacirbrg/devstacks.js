@@ -4,7 +4,7 @@ import { FrameworkElement } from "@libs/core/framework-element";
 import { Component } from "@libs/core/component";
 import { ComponentProps } from "@libs/core/component-props";
 import { DOM } from '@libs/core/dom';
-import { Styles } from '@libs/ui/styles';
+import { DataAttributes } from '@libs/ui/data-attributes';
 import { TypoHeadingType } from '@libs/ui/typo/heading/typo-heading-type';
 import { Color } from "@libs/ui/enums/color.enum";
 
@@ -21,7 +21,7 @@ export class TypoHeading extends Component<TypoHeadingProps> {
             </div>
         );
 
-        Styles.setDataColor(element, this.props.Color || Color.Unknown);
+        DataAttributes.setDataColor(element, this.props.Color || Color.Unknown);
         this._setType(element, this.props.Type);
 
         return element;
@@ -29,7 +29,7 @@ export class TypoHeading extends Component<TypoHeadingProps> {
 
     public setColor(color: Color): void {
         this.props.Color = color;
-        Styles.setDataColor(this.element!, color);
+        DataAttributes.setDataColor(this.element!, color);
     }
 
     public setContent(content: string|FrameworkElement): void {
