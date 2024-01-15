@@ -8,87 +8,87 @@
     // SIZES
     // ----------------------------------------------------
     // small size
-    --component-size-sm-border-radius: var(--layout-brd-radius-md);
-    --component-size-sm-border-width: 1px;
-    --component-size-sm-height: var(--layout-nontable-row-height-sm);
-    --component-size-sm-font-size: var(--font-size-xs);
-    --component-size-sm-font-weight: var(--font-weight-bold);
-    --component-size-sm-margin-bottom: var(--layout-gap-vertical-sm);
-    --component-size-sm-padding: 0 var(--layout-nontable-padding-sm);
+    --component-sm-border-radius: var(--layout-brd-radius-md);
+    --component-sm-border-width: 1px;
+    --component-sm-height: var(--layout-nontable-row-height-sm);
+    --component-sm-font-size: var(--font-size-xs);
+    --component-sm-font-weight: var(--font-weight-bold);
+    --component-sm-margin-bottom: var(--layout-gap-vertical-sm);
+    --component-sm-padding: 0 var(--layout-nontable-padding-sm);
 
     // medium size: default
-    --component-size-md-border-radius: var(--layout-brd-radius-md);
-    --component-size-md-border-width: 0.125rem;
-    --component-size-md-height: var(--layout-nontable-row-height-md);
-    --component-size-md-font-size: var(--font-size-md);
-    --component-size-md-font-weight: var(--font-weight-regular);
-    --component-size-md-margin-bottom: var(--layout-gap-vertical-md);
-    --component-size-md-padding: 0 var(--layout-nontable-padding-md);
+    --component-md-border-radius: var(--layout-brd-radius-md);
+    --component-md-border-width: 0.125rem;
+    --component-md-height: var(--layout-nontable-row-height-md);
+    --component-md-font-size: var(--font-size-md);
+    --component-md-font-weight: var(--font-weight-regular);
+    --component-md-margin-bottom: var(--layout-gap-vertical-md);
+    --component-md-padding: 0 var(--layout-nontable-padding-md);
 
     // large size
-    --component-size-lg-border-radius: var(--layout-brd-radius-md);
-    --component-size-lg-border-width: 0.25rem;
-    --component-size-lg-height: var(--layout-nontable-row-height-lg);
-    --component-size-lg-font-size: var(--font-size-xl);
-    --component-size-lg-font-weight: var(--font-weight-bold);
-    --component-size-lg-margin-bottom: var(--layout-gap-vertical-lg);
-    --component-size-lg-padding: 0 var(--layout-nontable-padding-lg);
+    --component-lg-border-radius: var(--layout-brd-radius-md);
+    --component-lg-border-width: 0.25rem;
+    --component-lg-height: var(--layout-nontable-row-height-lg);
+    --component-lg-font-size: var(--font-size-xl);
+    --component-lg-font-weight: var(--font-weight-bold);
+    --component-lg-margin-bottom: var(--layout-gap-vertical-lg);
+    --component-lg-padding: 0 var(--layout-nontable-padding-lg);
 
     // COLORS
     // ----------------------------------------------------
     // unknown color
-    --component-color-unknown-background-color: var(--color-body-10);
-    --component-color-unknown-border-color: var(--color-body-30);
-    --component-color-unknown-color: var(--color-body-contrast-10);
-    --component-color-unknown-hover-background-color: var(--color-body-40);
-    --component-color-unknown-hover-border-color: var(--color-body-60);
-    --component-color-unknown-hover-color: var(--color-body-contrast-40);
+    --component-unknown-background-color: var(--color-body-10);
+    --component-unknown-border-color: var(--color-body-30);
+    --component-unknown-color: var(--color-body-contrast-10);
+    --component-unknown-hover-background-color: var(--color-body-40);
+    --component-unknown-hover-border-color: var(--color-body-60);
+    --component-unknown-hover-color: var(--color-body-contrast-40);
 
     // primary color
-    --component-color-primary-background-color: var(--color-primary-50);
-    --component-color-primary-border-color: var(--color-primary-60);
-    --component-color-primary-color: var(--color-primary-contrast-50);
-    --component-color-primary-hover-background-color: var(--color-primary-70);
-    --component-color-primary-hover-border-color: var(--color-primary-80);
-    --component-color-primary-hover-color: var(--color-primary-contrast-60);
+    --component-primary-background-color: var(--color-primary-50);
+    --component-primary-border-color: var(--color-primary-60);
+    --component-primary-color: var(--color-primary-contrast-50);
+    --component-primary-hover-background-color: var(--color-primary-70);
+    --component-primary-hover-border-color: var(--color-primary-80);
+    --component-primary-hover-color: var(--color-primary-contrast-60);
 
     // secondary color
-    --component-color-secondary-background-color: var(--color-secondary-50);
-    --component-color-secondary-border-color: var(--color-secondary-60);
-    --component-color-secondary-color: var(--color-secondary-contrast-50);
-    --component-color-secondary-hover-background-color: var(--color-secondary-70);
-    --component-color-secondary-hover-border-color: var(--color-secondary-80);
-    --component-color-secondary-hover-color: var(--color-secondary-contrast-60);
+    --component-secondary-background-color: var(--color-secondary-50);
+    --component-secondary-border-color: var(--color-secondary-60);
+    --component-secondary-color: var(--color-secondary-contrast-50);
+    --component-secondary-hover-background-color: var(--color-secondary-70);
+    --component-secondary-hover-border-color: var(--color-secondary-80);
+    --component-secondary-hover-color: var(--color-secondary-contrast-60);
 
     // danger color
-    --component-color-danger-background-color: var(--color-danger-50);
-    --component-color-danger-border-color: var(--color-danger-60);
-    --component-color-danger-color: var(--color-danger-contrast-50);
-    --component-color-danger-hover-background-color: var(--color-danger-70);
-    --component-color-danger-hover-border-color: var(--color-danger-80);
-    --component-color-danger-hover-color: var(--color-danger-contrast-60);
+    --component-danger-background-color: var(--color-danger-50);
+    --component-danger-border-color: var(--color-danger-60);
+    --component-danger-color: var(--color-danger-contrast-50);
+    --component-danger-hover-background-color: var(--color-danger-70);
+    --component-danger-hover-border-color: var(--color-danger-80);
+    --component-danger-hover-color: var(--color-danger-contrast-60);
 
     // info color
-    --component-color-info-background-color: var(--color-info-50);
-    --component-color-info-border-color: var(--color-info-60);
-    --component-color-info-color: var(--color-info-contrast-50);
-    --component-color-info-hover-background-color: var(--color-info-70);
-    --component-color-info-hover-border-color: var(--color-info-80);
-    --component-color-info-hover-color: var(--color-info-contrast-60);
+    --component-info-background-color: var(--color-info-50);
+    --component-info-border-color: var(--color-info-60);
+    --component-info-color: var(--color-info-contrast-50);
+    --component-info-hover-background-color: var(--color-info-70);
+    --component-info-hover-border-color: var(--color-info-80);
+    --component-info-hover-color: var(--color-info-contrast-60);
 
     // success color
-    --component-color-success-background-color: var(--color-success-50);
-    --component-color-success-border-color: var(--color-success-60);
-    --component-color-success-color: var(--color-success-contrast-50);
-    --component-color-success-hover-background-color: var(--color-success-70);
-    --component-color-success-hover-border-color: var(--color-success-80);
-    --component-color-success-hover-color: var(--color-success-contrast-60);
+    --component-success-background-color: var(--color-success-50);
+    --component-success-border-color: var(--color-success-60);
+    --component-success-color: var(--color-success-contrast-50);
+    --component-success-hover-background-color: var(--color-success-70);
+    --component-success-hover-border-color: var(--color-success-80);
+    --component-success-hover-color: var(--color-success-contrast-60);
 
     // warning color
-    --component-color-warning-background-color: var(--color-warning-50);
-    --component-color-warning-border-color: var(--color-warning-60);
-    --component-color-warning-color: var(--color-warning-contrast-50);
-    --component-color-warning-hover-background-color: var(--color-warning-70);
-    --component-color-warning-hover-border-color: var(--color-warning-80);
-    --component-color-warning-hover-color: var(--color-warning-contrast-60);
+    --component-warning-background-color: var(--color-warning-50);
+    --component-warning-border-color: var(--color-warning-60);
+    --component-warning-color: var(--color-warning-contrast-50);
+    --component-warning-hover-background-color: var(--color-warning-70);
+    --component-warning-hover-border-color: var(--color-warning-80);
+    --component-warning-hover-color: var(--color-warning-contrast-60);
 }
