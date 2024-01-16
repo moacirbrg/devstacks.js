@@ -1,0 +1,95 @@
+.form-text-field-component {
+    // LAYOUT
+    // ----------------------------------------------------
+    --component-label-color: var(--color-body-contrast-50);
+    --component-label-font-family: var(--font-family-sans-serif);
+    --component-label-font-size: var(--font-size-md);
+    --component-label-font-weight: var(--font-weight-regular);
+    --component-label-margin-bottom: var(--layout-gap-vertical-md);
+    --component-transition: border-color 0.3s ease;
+
+    --component-input-background-color: var(--color-body-10);
+    --component-input-border-color: var(--color-body-30);
+    --component-input-border-radius: var(--layout-brd-radius-md);
+    --component-input-border-style: solid;
+    --component-input-border-width: var(--layout-brd-width-sm);
+    --component-input-color: var(--color-body-contrast-50);
+    --component-input-font-family: var(--font-family-sans-serif);
+    --component-input-font-size: var(--font-size-md);
+    --component-input-font-style: normal;
+    --component-input-font-weight: var(--font-weight-light);
+    --component-input-height: var(--layout-nontable-row-height-md);
+    --component-input-padding-h: var(--layout-gap-horizontal-md);
+
+    --component-input-focus-background-color: var(--color-body-body-10);
+    --component-input-focus-border-color: var(--color-primary-50);
+    --component-input-focus-border-radius: var(--layout-brd-radius-md);
+    --component-input-focus-border-style: solid;
+    --component-input-focus-border-width: var(--layout-brd-width-sm);
+    --component-input-focus-color: var(--color-body-contrast-50);
+    --component-input-focus-font-family: var(--font-family-sans-serif);
+    --component-input-focus-font-size: var(--font-size-md);
+    --component-input-focus-font-style: normal;
+    --component-input-focus-font-weight: var(--font-weight-light);
+
+    --component-input-hover-background-color: var(--color-body-body-10);
+    --component-input-hover-border-color: var(--color-body-70);
+    --component-input-hover-border-radius: var(--layout-brd-radius-md);
+    --component-input-hover-border-style: solid;
+    --component-input-hover-border-width: var(--layout-brd-width-sm);
+    --component-input-hover-color: var(--color-body-contrast-50);
+    --component-input-hover-font-family: var(--font-family-sans-serif);
+    --component-input-hover-font-size: var(--font-size-md);
+    --component-input-hover-font-style: normal;
+    --component-input-hover-font-weight: var(--font-weight-light);
+
+    --component-input-invalid-background-color: var(--color-body-body-10);
+    --component-input-invalid-border-color: var(--color-danger-50);
+    --component-input-invalid-border-radius: var(--layout-brd-radius-md);
+    --component-input-invalid-border-style: solid;
+    --component-input-invalid-border-width: var(--layout-brd-width-sm);
+    --component-input-invalid-color: var(--color-body-contrast-50);
+    --component-input-invalid-font-family: var(--font-family-sans-serif);
+    --component-input-invalid-font-size: var(--font-size-md);
+    --component-input-invalid-font-style: normal;
+    --component-input-invalid-font-weight: var(--font-weight-light);
+
+    --component-input-valid-background-color: var(--color-body-body-10);
+    --component-input-valid-border-color: var(--color-success-50);
+    --component-input-valid-border-radius: var(--layout-brd-radius-md);
+    --component-input-valid-border-style: solid;
+    --component-input-valid-border-width: var(--layout-brd-width-sm);
+    --component-input-valid-color: var(--color-body-contrast-50);
+    --component-input-valid-font-family: var(--font-family-sans-serif);
+    --component-input-valid-font-size: var(--font-size-md);
+    --component-input-valid-font-style: normal;
+    --component-input-valid-font-weight: var(--font-weight-light);
+
+    --component-input-disabled-background-color: var(--color-body-contrast-10);
+    --component-input-disabled-border-color: var(--color-body-contrast-20);
+    --component-input-disabled-border-radius: var(--layout-brd-radius-md);
+    --component-input-disabled-border-style: solid;
+    --component-input-disabled-border-width: var(--layout-brd-width-sm);
+    --component-input-disabled-color: var(--color-body-contrast-50);
+    --component-input-disabled-font-family: var(--font-family-sans-serif);
+    --component-input-disabled-font-size: var(--font-size-md);
+    --component-input-disabled-font-style: normal;
+    --component-input-disabled-font-weight: var(--font-weight-light);
+
+    --component-input-readonly-background-color: var(--color-body-contrast-10);
+    --component-input-readonly-border-color: var(--color-body-contrast-20);
+    --component-input-readonly-border-radius: var(--layout-brd-radius-md);
+    --component-input-readonly-border-style: solid;
+    --component-input-readonly-border-width: var(--layout-brd-width-sm);
+    --component-input-readonly-color: var(--color-body-contrast-50);
+    --component-input-readonly-font-family: var(--font-family-sans-serif);
+    --component-input-readonly-font-size: var(--font-size-md);
+    --component-input-readonly-font-style: normal;
+    --component-input-readonly-font-weight: var(--font-weight-light);
+
+    --component-input-placeholder-color: var(--color-body-contrast-10);
+    --component-input-placeholder-font-family: var(--font-family-sans-serif);
+    --component-input-placeholder-font-size: var(--font-size-md);
+    --component-input-placeholder-font-style: normal;
+    --component-input-placeholder-font-weight: var(--font-weight-light);
+}

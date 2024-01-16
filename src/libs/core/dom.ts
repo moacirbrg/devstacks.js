@@ -163,6 +163,10 @@ export class DOM {
         }
     }
 
+    public static getAttribute(el: HTMLElement, attributeName: string): string|null {
+        return el.getAttribute(attributeName);
+    }
+
     public static hasAttribute(el: HTMLElement, attributeName: string): boolean {
         return el.hasAttribute(attributeName);
     }

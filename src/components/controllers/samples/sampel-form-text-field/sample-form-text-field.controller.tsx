@@ -7,7 +7,7 @@ export class SampleFormTextFieldController extends Component {
     public render(): FrameworkElement {
         return (
             <div class="sample-form-text-field-controller">
-                <FormTextField Label="Label" Placeholder="Placeholder" />
+                <FormTextField Label="Email Address" Placeholder="you@example.com" />
             </div>
         );
     }

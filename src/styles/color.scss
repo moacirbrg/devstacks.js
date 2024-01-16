@@ -9,15 +9,15 @@ body { // default: light
     --color-body-80: color-mix(in srgb, var(--color-body-10) 100%, black 35%);
     --color-body-90: color-mix(in srgb, var(--color-body-10) 100%, black 40%);
 
-    --color-body-contrast-10: color-mix(in srgb, var(--color-body-10) 40%, black 60%);
-    --color-body-contrast-20: color-mix(in srgb, var(--color-body-10) 35%, black 65%);
-    --color-body-contrast-30: color-mix(in srgb, var(--color-body-10) 30%, black 70%);
-    --color-body-contrast-40: color-mix(in srgb, var(--color-body-10) 25%, black 75%);
-    --color-body-contrast-50: color-mix(in srgb, var(--color-body-10) 20%, black 80%);
-    --color-body-contrast-60: color-mix(in srgb, var(--color-body-10) 15%, black 85%);
-    --color-body-contrast-70: color-mix(in srgb, var(--color-body-10) 10%, black 90%);
-    --color-body-contrast-80: color-mix(in srgb, var(--color-body-10) 5%, black 95%);
-    --color-body-contrast-90: color-mix(in srgb, var(--color-body-10) 0%, black 100%);
+    --color-body-contrast-10: color-mix(in srgb, var(--color-body-10) 70%, black 30%);
+    --color-body-contrast-20: color-mix(in srgb, var(--color-body-10) 40%, black 40%);
+    --color-body-contrast-30: color-mix(in srgb, var(--color-body-10) 30%, black 50%);
+    --color-body-contrast-40: color-mix(in srgb, var(--color-body-10) 20%, black 60%);
+    --color-body-contrast-50: color-mix(in srgb, var(--color-body-10) 10%, black 70%);
+    --color-body-contrast-60: color-mix(in srgb, var(--color-body-10) 5%, black 75%);
+    --color-body-contrast-70: color-mix(in srgb, var(--color-body-10) 0%, black 80%);
+    --color-body-contrast-80: color-mix(in srgb, var(--color-body-10) 0%, black 85%);
+    --color-body-contrast-90: color-mix(in srgb, var(--color-body-10) 0%, black 90%);
 
     --color-neutral-10: color-mix(in srgb, var(--color-neutral-50) 100%, white 20%);
     --color-neutral-20: color-mix(in srgb, var(--color-neutral-50) 100%, white 15%);

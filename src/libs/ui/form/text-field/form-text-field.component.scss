@@ -1,0 +1,101 @@
+.form-text-field-component {
+    width: 100%;
+
+    label {
+        color: var(--component-label-color);
+        display: block;
+        font-family: var(--component-label-font-family);
+        font-size: var(--component-label-font-size);
+        font-weight: var(--component-label-font-weight);
+        margin-bottom: var(--component-label-margin-bottom);
+        width: 100%;
+    }
+
+    input {
+        background-color: var(--component-input-background-color);
+        border-color: var(--component-input-border-color);
+        border-radius: var(--component-input-border-radius);
+        border-style: var(--component-input-border-style);
+        box-sizing: border-box;
+        border-width: var(--component-input-border-width);
+        color: var(--component-input-color);
+        height: var(--component-input-height);
+        font-family: var(--component-input-font-family);
+        font-size: var(--component-input-font-size);
+        font-style: var(--component-input-font-style);
+        font-weight: var(--component-input-font-weight);
+        padding-left: var(--component-input-padding-h);
+        padding-right: var(--component-input-padding-h);
+        transition: var(--component-transition);
+        width: 100%;
+
+        &::placeholder {
+            color: var(--component-input-placeholder-color);
+            font-family: var(--component-input-placeholder-font-family);
+            font-size: var(--component-input-placeholder-font-size);
+            font-weight: var(--component-input-placeholder-font-weight);
+            font-style: var(--component-input-placeholder-font-style);
+        }
+    }
+
+    &:hover:not(.disabled):not([data-focus="true"]) {
+        input {
+            background-color: var(--component-input-hover-background-color);
+            border-color: var(--component-input-hover-border-color);
+            border-radius: var(--component-input-hover-border-radius);
+            border-style: var(--component-input-hover-border-style);
+            border-width: var(--component-input-hover-border-width);
+            color: var(--component-input-hover-color);
+            font-family: var(--component-input-hover-font-family);
+            font-size: var(--component-input-hover-font-size);
+            font-style: var(--component-input-hover-font-style);
+            font-weight: var(--component-input-hover-font-weight);
+        }
+    }
+
+    &.invalid {
+        input {
+            background-color: var(--component-input-invalid-background-color);
+            border-color: var(--component-input-invalid-border-color);
+            border-radius: var(--component-input-invalid-border-radius);
+            border-style: var(--component-input-invalid-border-style);
+            border-width: var(--component-input-invalid-border-width);
+            color: var(--component-input-invalid-color);
+            font-family: var(--component-input-invalid-font-family);
+            font-size: var(--component-input-invalid-font-size);
+            font-style: var(--component-input-invalid-font-style);
+            font-weight: var(--component-input-invalid-font-weight);
+        }
+    }
+
+    &.valid {
+        input {
+            background-color: var(--component-input-valid-background-color);
+            border-color: var(--component-input-valid-border-color);
+            border-radius: var(--component-input-valid-border-radius);
+            border-style: var(--component-input-valid-border-style);
+            border-width: var(--component-input-valid-border-width);
+            color: var(--component-input-valid-color);
+            font-family: var(--component-input-valid-font-family);
+            font-size: var(--component-input-valid-font-size);
+            font-style: var(--component-input-valid-font-style);
+            font-weight: var(--component-input-valid-font-weight);
+        }
+    }
+
+    &[data-focus="true"] {
+        input {
+            background-color: var(--component-input-focus-background-color);
+            border-color: var(--component-input-focus-border-color);
+            border-radius: var(--component-input-focus-border-radius);
+            border-style: var(--component-input-focus-border-style);
+            border-width: var(--component-input-focus-border-width);
+            color: var(--component-input-focus-color);
+            font-family: var(--component-input-focus-font-family);
+            font-size: var(--component-input-focus-font-size);
+            font-style: var(--component-input-focus-font-style);
+            font-weight: var(--component-input-focus-font-weight);
+            outline: none;
+        }
+    }
+}
