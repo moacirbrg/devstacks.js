@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;500&display=swap');
+
 body {
-    --font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans",
+    --font-family-sans-serif: 'Hanken Grotesk', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans",
                    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
     --font-family-serif: Georgia, "Times New Roman", "Droid Serif", "Noto Serif", "Liberation Serif",
@@ -14,11 +16,14 @@ body {
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
 
-    --font-size-h1: 2rem;
-    --font-size-h2: 1.75rem;
-    --font-size-h3: 1.5rem;
-    --font-size-h4: 1.25rem;
-    --font-size-h5: 1rem;
+    --font-weight-default: var(--font-weight-light);
+    --font-weight-default-strong: var(--font-weight-medium);
+
+    --font-size-h1: 2.3125rem;
+    --font-size-h2: 1.9375rem;
+    --font-size-h3: 1.3125rem;
+    --font-size-h4: 1.1875rem;
+    --font-size-h5: 1.0635rem;
     --font-size-h6: 0.75rem;
 
     --font-size-xs: 0.75rem;

@@ -12,7 +12,7 @@
     --component-sm-border-width: 1px;
     --component-sm-height: var(--layout-nontable-row-height-sm);
     --component-sm-font-size: var(--font-size-xs);
-    --component-sm-font-weight: var(--font-weight-medium);
+    --component-sm-font-weight: var(--font-weight-default-strong);
     --component-sm-margin-bottom: var(--layout-gap-vertical-sm);
     --component-sm-padding: 0 var(--layout-nontable-padding-sm);
 
@@ -21,7 +21,7 @@
     --component-md-border-width: 0.125rem;
     --component-md-height: var(--layout-nontable-row-height-md);
     --component-md-font-size: var(--font-size-md);
-    --component-md-font-weight: var(--font-weight-medium);
+    --component-md-font-weight: var(--font-weight-default-strong);
     --component-md-margin-bottom: var(--layout-gap-vertical-md);
     --component-md-padding: 0 var(--layout-nontable-padding-md);
 
@@ -30,7 +30,7 @@
     --component-lg-border-width: 0.25rem;
     --component-lg-height: var(--layout-nontable-row-height-lg);
     --component-lg-font-size: var(--font-size-xl);
-    --component-lg-font-weight: var(--font-weight-medium);
+    --component-lg-font-weight: var(--font-weight-default-strong);
     --component-lg-margin-bottom: var(--layout-gap-vertical-lg);
     --component-lg-padding: 0 var(--layout-nontable-padding-lg);
 

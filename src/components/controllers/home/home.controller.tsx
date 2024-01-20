@@ -8,8 +8,8 @@ export class HomeController extends Component {
     public render(): FrameworkElement {
         return (
             <div class="home-controller">
-                <TypoHeading Type={TypoHeadingType.H1}>Home</TypoHeading>
-                <p>Take a look at the samples:</p>
+                <TypoHeading Type={TypoHeadingType.H1}>DevStacks.js framework samples</TypoHeading>
+                <p>Take a look at these samples:</p>
                 <ul>
                     <li><a routerLink="/samples/form-button">Form Button</a></li>
                     <li><a routerLink="/samples/form-text-field">Form TextField</a></li>
